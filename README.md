@@ -47,3 +47,7 @@ Solo day!
 W3D2
 
 [Utako Ueda](https://github.com/utako)
+
+W3D3
+
+[David Wu](github.com/david-wu)
