@@ -1,0 +1,57 @@
+begin
+  puts "User email?"
+  u_email = gets.chomp
+  unless user = User.find_by(:email => u_email)
+    user = User.new(:email => u_email).save!
+  end
+
+  begin
+    puts "Visit(v) shortened URL or create(c) one?"
+    shortened_or_create = gets.chomp.downcase
+    raise "Input must be 'c' or 'v'!" unless %w{c v}.include?(shortened_or_create)
+  rescue => e
+    puts e
+    retry
+  end
+
+  if shortened_or_create == 'c'
+    begin
+      puts "Please enter a long url you would like to shorten"
+      long_url = gets.chomp
+      shortened = ShortenedUrl.create_for_user_and_long_url!(user, long_url)
+      puts shortened.short_url
+
+      puts "Enter Tags?"
+      tags = gets.chomp.split(' ')
+      tags.each do |topic|
+        unless tag_topic = TagTopic.find_by(:topic => topic)
+          tag_topic = TagTopic.new(:topic => topic).save!
+        end
+        Tagging.new(:tag_topic_id => tag_topic.id, :shortened_url_id => shortened.id)
+      end
+
+    rescue => e
+      puts e
+      retry
+    end
+
+  elsif shortened_or_create == 'v'
+    clickable = ShortenedUrl.pluck(:short_url)
+    begin
+      puts "Here are the shortened URLS:"
+      puts clickable
+      puts "Please enter a URL that you'd like to visit."
+      shortened = gets.chomp
+      raise "Input must be one of the shortened URLs listed!" unless clickable.include?(shortened)
+      shortened_url = ShortenedUrl.find_by(:short_url => shortened)
+      Launchy.open(shortened_url.long_url)
+      Visit.record_visit!(user, shortened_url)
+    rescue => e
+      puts e
+      retry
+    end
+  end
+rescue => e
+  puts e
+  retry
+end
