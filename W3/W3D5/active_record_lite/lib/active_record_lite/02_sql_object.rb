@@ -6,7 +6,7 @@ require_relative '00_attr_accessor_object'
 
 require 'active_support/inflector'
 
-class MassObject < AttrAccessorObject
+class MassObject
     
   def self.parse_all(results)
     results.map do |result|
@@ -27,11 +27,8 @@ class SQLObject < MassObject
   end
 
   def self.table_name
-    unless self.to_s.downcase == 'human'
-      @table_name = self.to_s.downcase.pluralize
-    else
-      @table_name = 'humans'
-    end
+    # solves specific just for human
+    @table_name ||= self.to_s.downcase.pluralize
   end
 
   def self.all
@@ -42,7 +39,7 @@ class SQLObject < MassObject
   def self.find(id)
     raise "ID must be an integer!" if id.to_s == 0
     
-    find_result = DBConnection.execute("SELECT * FROM #{self.table_name} WHERE id=#{id}").first
+    find_result = DBConnection.execute("SELECT * FROM #{self.table_name} WHERE id = ?", id).first
     # SQL injection!
     
     find_result.keys.map!(&:to_sym)
@@ -58,7 +55,7 @@ class SQLObject < MassObject
     raise "already inserted!" unless self.id.nil?
 
     attrs = {}
-    vars = self.class.columns.map { |var| var.to_s.gsub("@", "").to_sym }
+    vars = self.class.columns.map { |var| var.to_s.to_sym }
     vars.each { |var| attrs[var] = self.send(var) }
 
     DBConnection.execute(<<-SQL, attrs)
@@ -82,14 +79,25 @@ class SQLObject < MassObject
     attributes.keys.each do |attribute|
       if options[attribute] || options[attribute.to_s]
         target_attr = options[attribute] || options[attribute.to_s]
-        instance_variable_set('@' + attribute.to_s, target_attr)
+        instance_variable_set("@#{attribute.to_s}", target_attr)
         attributes[attribute] = target_attr
       else
-        instance_variable_set('@' + attribute.to_s, nil)
+        instance_variable_set("@#{attribute.to_s}", nil)
       end
     end
     
-    self.class.my_attr_accessor(*attributes.keys)
+    # self.class.my_attr_accessor(*attributes.keys)
+    
+    #attr_accessor
+    attributes.keys.each do |name|
+      self.class.send(:define_method, name) do
+        instance_variable_get("@#{name.to_s}")
+      end
+      self.class.send(:define_method, "#{name.to_s}=") do |new_val|
+        instance_variable_set("@#{name.to_s}", new_val)
+      end
+    end
+    
     # e.g., id, fname, lname, house_id
     # e.g., id, name, owner_id
   end
@@ -101,16 +109,18 @@ class SQLObject < MassObject
   def update
     
     attrs = {}
-    vars = self.class.columns.map { |var| var.to_s.gsub("@", "").to_sym }
+    vars = self.class.columns.map { |var| var.to_s.to_sym }
     vars.each { |var| attrs[var] = self.send(var) }
+    set_info = attrs.map { |attribute, val| "#{attribute.to_s} = ?" }.join(', ')
     
-    DBConnection.execute(<<-SQL)
+    
+    DBConnection.execute(<<-SQL, *attribute_values, id)
       UPDATE 
-      #{self.class.table_name}
+        #{self.class.table_name}
       SET 
-      #{attrs.map { |attribute, val| attribute.to_s + '=' + "'" + val.to_s + "'" }.join(', ')}
+        #{set_info}
       WHERE 
-        id=#{self.id}
+        id = ? 
     SQL
   end
 
