@@ -1,6 +1,8 @@
 require_relative 'db_connection'
 require_relative '01_mass_object'
-require_relative '00_attr_accessor_object.rb'
+require_relative '00_attr_accessor_object'
+# require_relative '03_searchable'
+
 
 require 'active_support/inflector'
 
@@ -21,33 +23,35 @@ class SQLObject < MassObject
   end
 
   def self.table_name=(table_name)
-    @table = table_name
+    @table_name = table_name
   end
 
   def self.table_name
     unless self.to_s.downcase == 'human'
-      @table = self.to_s.downcase.pluralize
+      @table_name = self.to_s.downcase.pluralize
     else
-      @table = 'humans'
+      @table_name = 'humans'
     end
   end
 
   def self.all
     all_results = DBConnection.execute("SELECT * FROM #{self.table_name}")
     parse_all(all_results)
-    # p DBConnection.execute2("SELECT * FROM #{self.table_name}")
   end
 
   def self.find(id)
     raise "ID must be an integer!" if id.to_s == 0
+    
     find_result = DBConnection.execute("SELECT * FROM #{self.table_name} WHERE id=#{id}").first
+    # SQL injection!
+    
     find_result.keys.map!(&:to_sym)
     
     self.new(find_result)
   end
 
   def attributes
-    # ...
+    @attributes ||= {}
   end
 
   def insert
@@ -69,23 +73,27 @@ class SQLObject < MassObject
   end
   
   def initialize(options={})
-    @attributes = self.class.columns
-        
-    raise "Not enough information!" if options.keys.length < @attributes.length - 1
+    @attributes = {}
     
-    @attributes.each do |attribute|
-      if options[attribute.to_sym]
-        instance_variable_set('@' + attribute, options[attribute.to_sym])
-      elsif options[attribute]
-        instance_variable_set('@' + attribute, options[attribute])
+    self.class.columns.each do |col|
+      @attributes[col.to_sym] = nil
+    end
+      
+    attributes.keys.each do |attribute|
+      if options[attribute] || options[attribute.to_s]
+        target_attr = options[attribute] || options[attribute.to_s]
+        instance_variable_set('@' + attribute.to_s, target_attr)
+        attributes[attribute] = target_attr
       else
-        instance_variable_set('@' + attribute, nil)
+        instance_variable_set('@' + attribute.to_s, nil)
       end
     end
     
-    self.class.my_attr_accessor(*@attributes.map(&:to_sym))
+    self.class.my_attr_accessor(*attributes.keys)
+    # e.g., id, fname, lname, house_id
+    # e.g., id, name, owner_id
   end
-
+  
   def save
     self.id.nil? ? self.insert : self.update
   end
@@ -107,8 +115,8 @@ class SQLObject < MassObject
   end
 
   def attribute_values
-    @attributes.each.with_object([]) do |attribute, attr_list|
-      attr_list << self.send(attribute.to_sym)
+    attributes.keys.each.with_object([]) do |attribute, attr_list|
+      attr_list << self.send(attribute)
     end
   end
 end
