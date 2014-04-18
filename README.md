@@ -50,4 +50,8 @@ W3D2
 
 W3D3
 
-[David Wu](github.com/david-wu)
+[David Wu](https://github.com/david-wu)
+
+W3D4
+
+[Phil Ingram](https://github.com/pingram)
