@@ -5,7 +5,7 @@ require_relative 'relation'
 module Searchable
   
   def where(params)    
-    results = Relation.new(self, params).run_execute
+    results = Relation.new(self, params)
     
     # hoe do I make them chain?
     

@@ -34,4 +34,13 @@ describe 'Searchable' do
     expect(human.fname).to eq('Matt')
     expect(human.house_id).to eq(1)
   end
+  
+  it '#where searches are chainable' do
+    humans = Human.where(fname: 'Matt')
+    expect(humans.length).to eq(1)
+
+    human = humans[0]
+    expect(human.fname).to eq('Matt')
+    expect(human.house_id).to eq(1)
+  end
 end
