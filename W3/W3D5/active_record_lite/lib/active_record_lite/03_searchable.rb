@@ -5,11 +5,11 @@ require_relative 'relation'
 module Searchable
   
   def where(params)    
-    results = Relation.new(self.table_name, params).run_execute
+    results = Relation.new(self, params).run_execute
     
     # hoe do I make them chain?
     
-    parse_all(results)
+    # parse_all(results)
   end
   
 end

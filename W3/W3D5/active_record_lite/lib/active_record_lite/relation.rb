@@ -3,8 +3,9 @@ require_relative '02_sql_object'
 
 class Relation
   
-  def initialize(table_name, params)
-    @table_name = table_name
+  def initialize(class_name, params)
+    @class_name = class_name
+    @table_name = class_name.table_name
     @where_info ||= [params.keys.map { |attribute| "#{attribute.to_s} = ?" }.join(' AND ')]
     @where_vals ||= params.values
   end
@@ -21,19 +22,30 @@ class Relation
         #{@where_info.join(' AND ')}
     SQL
     
-    # parse_all(results)
+    parse_all(results)
   end
   
   def where(params)
     # adds other "where" query info...
-    
     @where_info << params.keys.map { |attribute| "#{attribute.to_s} = ?" }.join(' AND ')
     @where_vals += params.values
+    self
+  end
+  
+  def parse_all(results)
+    # parses results
+    results.map do |result|
+      @class_name.new(result)
+    end
   end
   
   # collect all the "where"s and the info in it, when it executes, join all the info with "AND"s, execute!
   
   # where_info = params.keys.map { |attribute| "#{attribute.to_s} = ?" }.join(' AND ')
 #   where_vals = params.values
+
+# User.all.where(:id=1).where(:chicken=true)
+
+
         
 end
