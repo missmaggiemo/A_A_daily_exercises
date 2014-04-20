@@ -29,7 +29,6 @@ describe 'Searchable' do
   
   it '#where works with .each' do
     humans = Human.where(house_id: 1)
-    p humans
     human_arr = []
     humans.each {|h| human_arr << h}
     expect(human_arr.length).to eq(2)
