@@ -55,3 +55,10 @@ W3D3
 W3D4
 
 [Phil Ingram](https://github.com/pingram)
+
+
+### Week 4
+
+W4D1
+
+[Tirso Peguero](github.com/tpeg88)
