@@ -25,7 +25,7 @@ W1D5
 
 ### Week 2
 
-W2D2
+W2D2 (and W2D3)
 
 [Tejas Mehta](https://github.com/tejas1mehta)
 
