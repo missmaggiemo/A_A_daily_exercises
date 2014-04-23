@@ -62,3 +62,7 @@ W3D4
 W4D1
 
 [Tirso Peguero](github.com/tpeg88)
+
+W4D2
+
+[Bryan Phillips](github.com/bdphilly)
