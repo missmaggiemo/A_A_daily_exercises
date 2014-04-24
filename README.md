@@ -66,3 +66,7 @@ W4D1
 W4D2
 
 [Bryan Phillips](github.com/bdphilly)
+
+W4D3
+
+[George Groh](github.com/Inglorion-G)
