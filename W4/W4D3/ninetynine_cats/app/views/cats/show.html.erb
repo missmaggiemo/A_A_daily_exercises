@@ -1,0 +1,13 @@
+<h3><%= @cat.name %></h3>
+<table>
+  <tr>
+    <td><%= @cat.color %></td>
+    <td><%= @cat.sex %></td>
+  </tr>
+</table>
+<p>Rental Requests: <%= @cat.rental_requests.count %></p>
+<div>
+  <% @cat.rental_requests.order(:start_date).each do |request| %>
+    <%= render partial: "cat_rental", locals: {request: request} %>
+  <% end %>
+</div>

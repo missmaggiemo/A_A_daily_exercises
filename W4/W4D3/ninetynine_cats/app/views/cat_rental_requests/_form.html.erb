@@ -1,0 +1,47 @@
+<form action="<%= request.persisted? ? cat_rental_request_url(request) : cat_rental_requests_url %>" method="post">
+  <% if request.persisted? %>
+  <input type="hidden" name="_method" value="PATCH">
+  <% end %>
+  <table>
+    <tr>
+      <td><label for="request_cat_id"><strong>Cat ID</strong></label></td>
+
+      <td>
+        <select name="cat_rental_request[cat_id]" id="request_cat_id">
+          <option></option>
+          <% cats.each do |cat_to_request| %>
+            <option value="<%= cat_to_request.id %>" <% if request.persisted? && request.cat.id == cat_to_request.id %> selected <% end %>>
+              <%= cat_to_request.id %>
+            </option>
+          <% end %>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="request_start_date"><strong>Start Date</strong></label></td>
+      <td>
+        <input type="date" name="cat_rental_request[start_date]" value="<%= request.start_date %>" id="request_start_date">
+      </td>
+    </tr>
+    <tr>
+      <td><label for="request_end_date"><strong>End Date</strong></label></td>
+      <td>
+        <input type="date" name="cat_rental_request[end_date]" value="<%= request.end_date %>" id="request_end_date">
+      </td>
+    </tr>
+    <% if request.persisted? %>
+    <tr>
+      <td><label for="request_status"><strong>Status</strong></label></td>
+      <td>
+        <select name="cat_rental_request[status]" id="request_status">
+          <option value="PENDING" <% if request.status == "PENDING" %> selected <% end %>>PENDING</option>
+          <option value="APPROVED" <% if request.status == "APPROVED" %> selected <% end %>>APPROVED</option>
+          <option value="DENIED" <% if request.status == "DENIED" %> selected <% end %>>DENIED</option>
+        </select>
+      </td>
+    </tr>
+    <% end %>
+  </table>
+  <input type="submit" value="Create Cat Rental Request">
+
+</form>

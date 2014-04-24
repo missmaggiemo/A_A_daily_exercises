@@ -1,0 +1,7 @@
+<h3><%= link_to "Request ID: #{request.id}", edit_cat_rental_request_url(request) %></h3>
+<p><%= request.start_date %> to <%= request.end_date %></p>
+<p><%= request.status %></p>
+<% if request.status == "PENDING" %>
+  <%= button_to [:approve, request] do %>Approve<% end %>
+  <%= button_to [:deny, request] do %>Deny<% end %>
+<% end %>
