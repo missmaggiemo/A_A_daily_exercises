@@ -1,0 +1,5 @@
+<h3>You are logged in on these devices:</h3>
+
+<% @user_sessions.each do |user_session| %>
+<p><%= user_session.user_agent %></p>
+<% end %>

@@ -1,0 +1,56 @@
+<form action="<%= cat.persisted? ? cat_url(cat) : cats_url %>" method="post">
+  <%= get_form_auth_token %>
+  <% if cat.persisted? %>
+  <input type="hidden" name="_method" value="PATCH">
+  <% end %>
+  <table>
+    <tr>
+      <td><label for="cat_name"><strong>Name</strong></label></td>
+      <td><input type="text" name="cat[name]" id="cat_name" value="<%= cat.name %>"></td>
+    </tr>
+    <tr>
+      <td><label for="cat_age"><strong>Age</strong></label></td>
+      <td><input type="text" name="cat[age]" id="cat_age" value="<%= cat.age %>"></td>
+    </tr>
+    <tr>
+      <td><strong>Sex</strong></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input type="radio" name="cat[sex]" id="cat_sex_female" value="F"
+        <% if cat.sex == "F" %> checked=1 <% end %>></td>
+      <td><label for="cat_sex_female">Female</label></td>
+    </tr>
+    <tr>
+      <td><input type="radio" name="cat[sex]" id="cat_sex_male" value="M"
+        <% if cat.sex == "M" %> checked=1 <% end %>>
+</td>
+      <td><label for="cat_sex_male">Male</label></td>
+    </tr>
+    <tr>
+      <td><label for="cat_color"><strong>Color</strong></label></td>
+
+      <td>
+        <select name="cat[color]" id="cat_color">
+          <option></option>
+          <option value="brown" <% if cat.color == "brown" %> selected <% end %>>Brown</option>
+          <option value="black" <% if cat.color == "black" %> selected <% end %>>Black</option>
+          <option value="blue" <% if cat.color == "blue" %> selected <% end %>>Blue</option>
+          <option value="white" <% if cat.color == "white" %> selected <% end %>>White</option>
+          <option value="orange" <% if cat.color == "orange" %> selected <% end %>>Orange</option>
+          <option value="tabby" <% if cat.color == "tabby" %> selected <% end %>>Tabby</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="cat_birth_date"><strong>Birth Date</strong></label></td>
+
+      <td>
+        <input type="date" name="cat[birth_date]" value="<%= cat.birth_date %>" id="cat_birth_date">
+      </td>
+
+    </tr>
+  </table>
+  <input type="submit" value="Create Cat">
+
+</form>

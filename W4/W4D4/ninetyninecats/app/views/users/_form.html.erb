@@ -1,0 +1,18 @@
+<form action="<%= user.persisted? ? user_url(user) : users_url %>" method="post">
+  <%= get_form_auth_token %>
+  <% if user.persisted? %>
+  <input type="hidden" name="_method" value="PATCH">
+  <% end %>
+  <table>
+    <tr>
+      <td><label for="user_name"><strong>Name</strong></label></td>
+      <td><input type="text" name="user[user_name]" id="user_name" value="<%= user.user_name %>"></td>
+    </tr>
+    <tr>
+      <td><label for="password"><strong>Password</strong></label></td>
+      <td><input type="password" name="user[password]" id="password"></td>
+    </tr>
+  </table>
+  <input type="submit" value="Sign up!">
+
+</form>
