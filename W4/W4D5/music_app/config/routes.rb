@@ -10,10 +10,6 @@ Rails.application.routes.draw do
   
   resources :bands
   
-  # resources :users do
-#     resources :bands
-#   end
-#   
   resources :bands do
     resources :albums
     
