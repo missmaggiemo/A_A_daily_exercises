@@ -1,0 +1,9 @@
+<% unless flash.now[:errors].nil? || flash.now[:errors].empty? %>
+  <% if flash.now[:errors].class.to_s == "String" %>
+    <%= flash.now[:errors] %><br />
+  <% else %>
+    <% flash.now[:errors].each do |error| %>
+      <%= error %><br />
+    <% end %>
+  <% end %>
+<% end %>
