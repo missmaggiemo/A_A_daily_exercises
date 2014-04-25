@@ -1,0 +1,5 @@
+<h1 id="track_title"><%= @track.title %></h1>
+<%= "<p>Bonus Track</p>".html_safe if @track.bonus %>
+
+<p>Band: <%= link_to @band.name, band_url(@band) %></p>
+<p>Album: <%= link_to @album.title, url_for([@band, @album ]) %></p>

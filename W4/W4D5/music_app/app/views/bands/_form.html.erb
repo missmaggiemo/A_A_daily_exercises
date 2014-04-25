@@ -1,0 +1,15 @@
+<form action="<%= bands_url %>" method="post" accept-charset="utf-8">
+  <%= form_authenticity_token_input %>
+  <table>
+    <tr>
+      <td><label for="band_name">Band Name</label></td>
+      <td><input type="text" name="band[name]" value="<%= band.name %>" id="band_name"></td>
+    </tr>
+    <tr>
+      <td>
+        <input type="submit" value="Create New Band">
+      </td>
+    </tr>
+  </table>
+  
+</form>

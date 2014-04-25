@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140425184524) do
+ActiveRecord::Schema.define(version: 20140425201903) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20140425184524) do
     t.string   "band_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "live",       default: false
   end
 
   add_index "albums", ["band_id"], name: "index_albums_on_band_id", using: :btree
@@ -42,10 +43,11 @@ ActiveRecord::Schema.define(version: 20140425184524) do
   add_index "sessions", ["user_id"], name: "index_sessions_on_user_id", using: :btree
 
   create_table "tracks", force: true do |t|
-    t.string   "title",      null: false
-    t.string   "album_id",   null: false
+    t.string   "title",                      null: false
+    t.string   "album_id",                   null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "bonus",      default: false
   end
 
   add_index "tracks", ["album_id"], name: "index_tracks_on_album_id", using: :btree

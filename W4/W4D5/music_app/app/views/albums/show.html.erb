@@ -1,0 +1,8 @@
+<h1 id="album_title"><%= @album.title %></h1>
+<%= "<p>Live Album</p>".html_safe if @album.live %>
+<h3>Band: <%= link_to @album.band.name, band_url(@album.band) %></h3>
+<h3>Tracks: <%= @album.tracks.count %></h3>
+<% @album.tracks.each do |track| %>
+  <%= render partial: 'tracks/track', locals: { band: @album.band, album: @album, track: track } %>
+<% end %>
+<%= button_to "Create a New Track", new_band_album_track_url(@album.band, @album, @track), method: :get %>

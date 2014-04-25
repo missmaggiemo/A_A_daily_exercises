@@ -1,0 +1,5 @@
+<h3><%= link_to album.title, url_for([band, album]) %></h3>
+<p>Tracks: <%= album.tracks.count %></p>
+<% album.tracks.each do |track| %>
+  <%= render partial: 'tracks/track', locals: { band: band, album: album, track: track } %>
+<% end %>

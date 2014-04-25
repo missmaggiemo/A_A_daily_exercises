@@ -1,0 +1,19 @@
+<form action="<%= url_for([band, album, track]) %>" method="post" accept-charset="utf-8">
+  <%= form_authenticity_token_input %>
+  <table>
+    <tr>
+      <td><label for="track_title">Track Title</label></td>
+      <td><input type="text" name="track[title]" value="<%= track.title %>" id="track_title"></td>
+    </tr>
+    <tr>
+      <td><label for="track_bonus">Bonus?</label></td>
+      <td><input type="checkbox" name="track[bonus]" value=true id="track_bonus">Bonus</td>
+    </tr>
+    <tr>
+      <td>
+        <input type="submit" value="Create New Track">
+      </td>
+    </tr>
+  </table>
+  
+</form>

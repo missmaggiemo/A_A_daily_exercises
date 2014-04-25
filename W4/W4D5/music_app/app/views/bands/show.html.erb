@@ -1,0 +1,5 @@
+<h1><%= @band.name %></h1>
+<% @band.albums.each do |album| %>
+  <%= render partial: 'albums/album', locals: {band: @band, album: album } %>
+<% end %>
+<%= button_to "Create New Alum", new_band_album_url(@band), method: :get %>

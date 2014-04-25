@@ -1,0 +1,34 @@
+<form action="<%= band_albums_url %>" method="post" accept-charset="utf-8">
+  <%= form_authenticity_token_input %>
+  <table>
+    <tr>
+      <td><label for="album_title">Album Title</label></td>
+      <td><input type="text" name="album[title]" value="<%= album.title %>" id="album_title"></td>
+    </tr>
+    <tr>
+      <td><label for="album_band">Album Band</label></td>
+      <td>
+        <select name="album[band_id]" id="album_band">
+          <option>Please Choose a Band</option>
+          <% bands.each do |band| %>
+            <option 
+            value="<%= band.id %>" 
+            <%= "selected='1'".html_safe if album.band_id == band.id %> >
+              <%= band.name %>
+            </option>
+          <% end %>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="track_live">Live?</label></td>
+      <td><input type="checkbox" name="track[live]" value=true id="track_live">Live</td>
+    </tr>
+    <tr>
+      <td>
+        <input type="submit" value="Create New Album">
+      </td>
+    </tr>
+  </table>
+  
+</form>

@@ -1,10 +1,27 @@
 Rails.application.routes.draw do
   
-  root 'sessions#new'
+  root 'bands#index'
   
   resources :users
   
   resource :session
+  
+  resources :bands
+  
+  # resources :users do
+#     resources :bands
+#   end
+#   
+  resources :bands do
+    resources :albums
+    
+    resources :albums do
+      resources :tracks
+    end
+    
+  end
+
+  
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

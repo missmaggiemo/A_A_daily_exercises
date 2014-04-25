@@ -14,3 +14,5 @@ end
 
 users.each(&:save)
 
+band_names = ["Metallica", "The Rolling Stones", "The Steve Miller Band", "Red Hot Chili Peppers"]
+band_names.each { |band_name| Band.create(name: band_name) }
