@@ -23,4 +23,8 @@ module SessionsHelper
     Session.clean_up_sessions
   end
   
+  def logged_in?
+    !!current_user
+  end
+  
 end

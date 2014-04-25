@@ -11,7 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140425164556) do
+ActiveRecord::Schema.define(version: 20140425184524) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "albums", force: true do |t|
+    t.string   "title"
+    t.string   "band_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "albums", ["band_id"], name: "index_albums_on_band_id", using: :btree
+
+  create_table "bands", force: true do |t|
+    t.string   "name",       null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "sessions", force: true do |t|
     t.integer  "user_id",    null: false
@@ -20,8 +38,17 @@ ActiveRecord::Schema.define(version: 20140425164556) do
     t.datetime "updated_at"
   end
 
-  add_index "sessions", ["token"], name: "index_sessions_on_token"
-  add_index "sessions", ["user_id"], name: "index_sessions_on_user_id"
+  add_index "sessions", ["token"], name: "index_sessions_on_token", using: :btree
+  add_index "sessions", ["user_id"], name: "index_sessions_on_user_id", using: :btree
+
+  create_table "tracks", force: true do |t|
+    t.string   "title",      null: false
+    t.string   "album_id",   null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "tracks", ["album_id"], name: "index_tracks_on_album_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "name",            null: false
@@ -32,7 +59,7 @@ ActiveRecord::Schema.define(version: 20140425164556) do
     t.datetime "updated_at"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["username"], name: "index_users_on_username", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["username"], name: "index_users_on_username", unique: true, using: :btree
 
 end

@@ -5,9 +5,8 @@ class ApplicationController < ActionController::Base
   
   include SessionsHelper
   
-  helper_method :current_user
+  helper_method :current_user, :logged_in?, :form_authenticity_token_input  
   
-  helper_method :form_authenticity_token_input
   
   def form_authenticity_token_input
     "<input type='hidden' name='authenticity_token' value='#{form_authenticity_token}' id='authenticity_token'>".html_safe
