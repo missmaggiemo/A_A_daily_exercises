@@ -11,7 +11,9 @@ class UsersController < ApplicationController
       render :new
     else
       if @user.save
-        self.current_user = @user
+        message = UserMailer.welcome_email(@user)
+        message.deliver!
+        login(@user)
         redirect_to user_url(@user)
       else
         flash.now[:errors] = @user.errors.full_messages

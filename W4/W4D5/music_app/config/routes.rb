@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   
   resources :users
   
-  resource :session
+  resource :session, except: [:new]
+  
+  get 'login' => 'sessions#new', as: :login
   
   resources :bands
   

@@ -13,5 +13,5 @@
 <% if logged_in? %>
 <%= render partial: 'notes/form', locals: { note: @new_note, track: @track } %>
 <% else %>
-<%= button_to "Log in to create a note!", new_session_url, method: :get %>
+<%= button_to "Log in to create a note!", login_url, method: :get %>
 <% end %>
