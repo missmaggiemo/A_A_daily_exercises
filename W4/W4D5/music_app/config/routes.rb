@@ -18,8 +18,9 @@ Rails.application.routes.draw do
     resources :albums do
       resources :tracks
     end
-    
   end
+  
+  resources :notes, only: [:create, :destroy]
 
   
   

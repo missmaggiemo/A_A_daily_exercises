@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   validates :username, :email, uniqueness: true
   
   has_many :sessions
+  has_many :notes
   
   def password
     self.password_digest

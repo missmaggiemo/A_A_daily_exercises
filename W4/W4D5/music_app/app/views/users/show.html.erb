@@ -1,1 +1,5 @@
 <h1 id="title">Hi, <%= @user.name %>!</h1>
+<p>You've made <%= @user.notes.count %> notes.</p>
+<% @user.notes.each do |note| %>
+  <%= render partial: 'notes/note', locals: { note: note, user_show: true } %>
+<% end %>

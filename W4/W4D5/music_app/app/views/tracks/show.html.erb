@@ -3,3 +3,15 @@
 
 <p>Band: <%= link_to @band.name, band_url(@band) %></p>
 <p>Album: <%= link_to @album.title, url_for([@band, @album ]) %></p>
+
+<hr>
+
+<% @track.notes.each do |note| %>
+  <%= render partial: 'notes/note', locals: { note: note, user_show: false } %>
+<% end %>
+
+<% if logged_in? %>
+<%= render partial: 'notes/form', locals: { note: @new_note, track: @track } %>
+<% else %>
+<%= button_to "Log in to create a note!", new_session_url, method: :get %>
+<% end %>

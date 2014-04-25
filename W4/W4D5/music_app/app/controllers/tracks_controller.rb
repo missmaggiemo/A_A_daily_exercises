@@ -43,6 +43,7 @@ class TracksController < ApplicationController
     @band = Band.find(params[:band_id])
     @album = Album.find(params[:album_id])
     @track = Track.find(params[:id])
+    @new_note = Note.new
   end
 
   private
