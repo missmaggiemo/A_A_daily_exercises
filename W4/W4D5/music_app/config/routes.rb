@@ -15,9 +15,9 @@ Rails.application.routes.draw do
     end
   end
     
-  resources :users, except: [:index]
+  resources :users
     
-  resource :session, except: [:new]
+  resource :session, except: :new
   
   get 'login' => 'sessions#new', as: :login
   

@@ -2,7 +2,7 @@ module SessionsHelper
   
   def current_user
     user_session = Session.find_by_token(session[:session_token])
-    return nil if user_session.nil?
+    return nil if user_session.nil? && @current_user.nil?
     @current_user || user_session.user
   end
   

@@ -55,6 +55,11 @@ class UsersController < ApplicationController
   def reactivate_thank_you
   end
   
+  def index
+    redirect_to user_url(current_user) unless current_user.admin?
+    @users = User.all
+  end
+  
   private
   
   def user_params

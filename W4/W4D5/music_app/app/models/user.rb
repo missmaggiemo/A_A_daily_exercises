@@ -21,6 +21,10 @@ class User < ActiveRecord::Base
     self.active
   end
   
+  def admin?
+    self.admin
+  end
+  
   def self.generate_activate_token
     SecureRandom::urlsafe_base64(16)
   end
