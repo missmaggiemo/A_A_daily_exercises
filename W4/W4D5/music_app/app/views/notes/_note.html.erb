@@ -1,8 +1,10 @@
 <div id="note_partial">
-  <%= "<h4>#{note.track.title}</h4>".html_safe if user_show %>
+  <% if user_show %>
+    <h4><%= link_to note.track.title, url_for([note.band, note.album, note.track])%></h4>
+  <% end %>
   <p><%= note.body %></p>
   <p><strong><%= link_to note.user.username, user_url(note.user) %></strong> <%= note.created_at %></p>
-  <% if current_user == note.user %>
+  <% if current_user == note.user || current_user.admin? %>
     <%= button_to "Delete Note", note_url(note), method: :delete %>
   <% end %>
   <hr>
