@@ -3,3 +3,12 @@
 <% @user.notes.each do |note| %>
   <%= render partial: 'notes/note', locals: { note: note, user_show: true } %>
 <% end %>
+<br>
+<br>
+<br>
+<br>
+<% if @user.active %>
+<%= button_to "Deactivate Your Account", deactivate_user_url(@user), method: :patch, data: { confirm: "Are you sure?" } %>
+<% else %>
+<%= button_to "Re-Activate Your Accout", reactivate_user_url(@user), method: :patch %>
+<% end %>

@@ -2,10 +2,10 @@ Welcome, <%= @user.name.capitalize %>!
 
 I hope you like the site!
 
-To log in, just follow this link: <%= @login_url %>
+To activate your account, just follow this link: <%= @login_url.gsub('localhost:3000', @root_text) %>
 
 Best,
 
 --Maggie
 
-<%= @url %>
+<%= @root_text %>

@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   end
   
   def create
+    params[:user][:activate_token] = User.generate_activate_token
     @user = User.new(user_params)
     unless params[:user][:password] == params[:user][:password_confirmation]
       flash[:errors] = "Password and confirmation don't match!"
@@ -13,8 +14,7 @@ class UsersController < ApplicationController
       if @user.save
         message = UserMailer.welcome_email(@user)
         message.deliver!
-        login(@user)
-        redirect_to user_url(@user)
+        redirect_to thank_you_users_url
       else
         flash.now[:errors] = @user.errors.full_messages
         render :new
@@ -26,10 +26,39 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
   
+  def deactivate
+    @user = User.find(params[:id])
+    @user.update(active: false)
+    logout_current_user!
+    redirect_to root_url
+  end
+  
+  def reactivate
+    @user = User.find(params[:id])
+    @user.update(activate_token: User.generate_activate_token)
+    message = UserMailer.welcome_email(@user)
+    message.deliver!
+    redirect_to user_url(@user)
+
+# reset activation token and send user new confirmation email
+  end
+  
+  def activate
+    @user = User.find_by_token(id: params[:user_id], token: params[:token])
+    @user.update(active: true)
+    redirect_to user_url(@user)
+  end
+  
+  def thank_you
+  end
+  
+  def reactivate_thank_you
+  end
+  
   private
   
   def user_params
-    params.require(:user).permit(:name, :username, :email, :password)
+    params.require(:user).permit(:name, :username, :email, :password, :activate_token)
   end
   
 end

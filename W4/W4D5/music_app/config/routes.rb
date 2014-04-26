@@ -1,9 +1,22 @@
 Rails.application.routes.draw do
   
   root 'bands#index'
-  
-  resources :users
-  
+        
+  resources :users do
+    collection do
+      get 'activate'
+      get 'thank_you'
+      get 'reactivate_thank_you'
+    end
+    
+    member do
+      patch 'deactivate', as: :deactivate
+      patch 'reactivate', as: :reactivate
+    end
+  end
+    
+  resources :users, except: [:index]
+    
   resource :session, except: [:new]
   
   get 'login' => 'sessions#new', as: :login
@@ -19,7 +32,6 @@ Rails.application.routes.draw do
   end
   
   resources :notes, only: [:create, :destroy]
-
   
   
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,0 +1,11 @@
+Welcome back, <%= @user.name.capitalize %>!
+
+I'm so glad to see you again!
+
+To reactivate your account, just follow this link: <%= @login_url.gsub('localhost:3000', @root_text) %>
+
+Best,
+
+--Maggie
+
+<%= @root_text %>
