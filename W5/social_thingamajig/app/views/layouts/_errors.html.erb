@@ -1,0 +1,8 @@
+<div id="errors" style="color: red;">
+  <% if flash[:errors] %>
+    <% flash[:errors].each do |error| %>
+      <marquee><%= error %></marquee>
+      <br>
+    <% end %>
+  <% end %>
+</div>

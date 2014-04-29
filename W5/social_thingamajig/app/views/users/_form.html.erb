@@ -1,0 +1,54 @@
+<form action="<%= new_user ? users_url : session_url %>" method="post" accept-charset="utf-8">
+  <%= form_auth_html %>
+  <table border="0" cellspacing="5" cellpadding="5">
+    <tr>
+      <td><label for="user_email">User Email</label></td>
+      <td><input type="text" name="user[email]" value="<%= user.email %>" id="user_email"></td>
+    </tr>
+    <tr>
+      <td><label for="user_password">User Password</label></td>
+      <td><input type="password" name="user[password]" value="" id="user_password"></td>
+    </tr>
+  </table>
+
+  <% if new_user %>
+
+  <h3>Make your first post!</h3>
+
+    <table border="0" cellspacing="5" cellpadding="5">
+      <tr>
+        <td>
+          <label for="post_title">Post Title</label>
+        </td>
+        <td>
+          <input type="text" name="posts[0][title]" value="<%= post.title %>" id="post_title">
+        </td>
+      </tr>
+    </table>
+
+  <div id="post_body">
+    <p>
+      <label for="post_body">Post Body</label>
+    </p>
+    <textarea name="posts[0][body]" id="post_body" rows="8" cols="40"><%= post.body %></textarea>
+  </div>
+
+    <h3> Add links! </h3>
+    <table border="0" cellspacing="5" cellpadding="5">
+      <% post.links.each_with_index do |link, i| %>
+        <tr>
+          <td><label for="link_title">Link Title</label></td>
+          <td><input type="text" name="links[<%= i %>][title]" value="<%= link.title %>" id="link_title"></td>
+        </tr>
+        <tr>
+          <td><label for="link_url">URL</label></td>
+          <td><input type="text" name="links[<%= i %>][url]" value="<%= link.url %>" id="link_url"></td>
+        </tr>
+      <% end %>
+    </table>
+
+  <% end %>
+
+
+  <p><input type="submit" value="<%= new_user ? "Sign Up" : "Sign In" %>"></p>
+</form>

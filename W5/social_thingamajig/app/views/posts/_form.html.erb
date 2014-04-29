@@ -1,0 +1,55 @@
+<form action="<%= new_post ? user_posts_url(user) : user_post_url(user, post) %>" method="post" accept-charset="utf-8">
+  <%= form_auth_html %>
+  <%= patch_input_html unless new_post %>
+
+  <table border="0" cellspacing="5" cellpadding="5">
+    <tr>
+      <td>
+        <label for="post_title">Post Title</label>
+      </td>
+      <td>
+        <input type="text" name="post[title]" value="<%= post.title %>" id="post_title">
+      </td>
+    </tr>
+  </table>
+
+<div id="post_body">
+  <p>
+    <label for="post_body">Post Body</label>
+  </p>
+  <textarea name="post[body]" id="post_body" rows="8" cols="40"><%= post.body %></textarea>
+</div>
+
+  <h3> Add links! </h3>
+  <table border="0" cellspacing="5" cellpadding="5">
+    <% post.links.each_with_index do |link, i| %>
+      <tr>
+        <td><label for="link_title">Link Title</label></td>
+        <td><input type="text" name="links[<%= i %>][title]" value="<%= link.title %>" id="link_title"></td>
+      </tr>
+      <tr>
+        <td><label for="link_url">URL</label></td>
+        <td><input type="text" name="links[<%= i %>][url]" value="<%= link.url %>" id="link_url"></td>
+      </tr>
+    <% end %>
+  </table>
+
+  <h3> Share with some of your of circles! </h3>
+  <table border="0" cellspacing="5" cellpadding="5">
+    <input type="hidden" name="post[circle_ids][]" value="">
+    <% user.friend_circles.each do |circle| %>
+    <tr>
+      <td><label for="circle_<%= circle.id %>"><%= circle.title %></label></td>
+      <td>
+        <input type="checkbox"
+          name="post[circle_ids][]"
+          value="<%= circle.id %>"
+          id="circle_<%= circle.id %>"
+          <%= "checked=1".html_safe if post.circles.include?(circle) %>>
+      </td>
+    </tr>
+    <% end %>
+  </table>
+
+  <p><input type="submit" value="<%= new_post ? "Create New Post" : "Update Post" %>"></p>
+</form>

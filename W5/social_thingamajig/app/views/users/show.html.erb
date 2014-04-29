@@ -1,0 +1,14 @@
+<h1 id="user_name"><%= @user.email %></h1>
+
+<h3>Circles</h3>
+<% @user.friend_circles.each do |circle| %>
+  <%= render partial: 'friend_circles/circle', locals: { circle: circle, user: @user } %>
+<% end %>
+
+<p><%= link_to "Make New Friend Circle", new_user_friend_circle_url(@user) %></p>
+
+<h3>Posts</h3>
+<% @user.posts.each do |post| %>
+<%= render partial: 'posts/post', locals: { post: post } %>
+<% end %>
+<%= button_to "Create New Post", new_user_post_url(@user), method: :get %>

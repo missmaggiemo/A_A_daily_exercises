@@ -1,0 +1,7 @@
+<h1 id="circle_title"><%= @circle.title %></h1>
+
+<% @circle.members.each do |member| %>
+<%= render partial: 'users/user', locals: { user: member } %>
+<% end %>
+
+<%= link_to "Edit Friend Circle", edit_user_friend_circle_url(@user, @circle) %>

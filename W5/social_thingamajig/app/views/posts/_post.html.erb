@@ -1,0 +1,7 @@
+<h4><%= post.title %></h4>
+<p><%= post.body %></p>
+<% post.links.each_with_index do |link, link_n| %>
+<%= render partial: 'posts/link', locals: { link: link, link_n: (link_n + 1) } %>
+<% end %>
+<p> <%= "Posted by #{post.user.email} at #{post.created_at}" unless current_user == post.user %> </p>
+<%= button_to "Remove Post", user_post_url(post.user, post), method: :delete %>

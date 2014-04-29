@@ -1,0 +1,14 @@
+<h1 id="post_title"><%= @post.title %></h1>
+<p><%= @post.body %></p>
+
+<h4>Links</h4>
+<% @post.links.each_with_index do |link, link_n| %>
+<%= render partial: 'posts/link', locals: { link: link, link_n: (link_n + 1) } %>
+<% end %>
+
+<h3>Shared With:</h3>
+<% @post.circles.each do |circle| %>
+<p><%= link_to circle.title, user_friend_circle_url(@user, circle) %></p>
+<% end %>
+
+<%= button_to "Edit Post", edit_user_post_url(@user, @post), method: :get %>
