@@ -11,7 +11,7 @@ class ControllerBase
   def initialize(req, res, route_params = {})
     @res = res
     @req = req
-    @params = Params.new(req, route_params)
+    @params = Params.new(req, route_params).params
     @already_built_response = false
   end
 
@@ -23,6 +23,7 @@ class ControllerBase
     @res.body = content
     @res.content_type = type
     @already_built_response = true
+    session.store_session(@res)
   end
 
   # helper method to alias @already_built_response

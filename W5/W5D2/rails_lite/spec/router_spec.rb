@@ -84,6 +84,8 @@ describe Router do
       subject.add_route(1, 2, 3, 4)
       req.stub(:path) { "/users" }
       req.stub(:request_method) { :get }
+      p req
+      p res
       subject.run(req, res)
       res.status.should == 404
     end

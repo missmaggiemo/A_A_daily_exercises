@@ -5,13 +5,16 @@ class Params
   # 1. query string
   # 2. post body
   # 3. route params
+  attr_reader :params
+  
   def initialize(req, route_params = {})
     @req = req
-    query_params = req.query_string ? parse_www_encoded_form(req.query_string) : route_params
+    # p route_params
+    query_params = req.query_string ? deep_merge(parse_www_encoded_form(req.query_string), route_params) : route_params
     body_params = req.body ? parse_www_encoded_form(req.body) : {}
     @params = deep_merge(query_params, body_params)
+    # p @params
     @strong_params = Hash.new([])
-    p @params
   end
 
   def [](key)
