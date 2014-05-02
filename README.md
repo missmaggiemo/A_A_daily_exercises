@@ -85,3 +85,10 @@ W5D1
 
 [Rohan Sahai](github.com/rsahai91)
 
+W5D2
+
+Solo day!
+
+W5D4
+
+[Nathan Hsieh](http://github.com/nhsiehgit)
