@@ -1,0 +1,9 @@
+<h1 id="link_title"><%= @link.title %></h1>
+<p><%= link_to @link.url %></p>
+
+<% @link.comments.each do |comment| %>
+<%= render partial: 'comments/comment', locals: { comment: comment, link: @link } %>
+<% end %>
+
+<h3>Add a Comment</h3>
+<%= render partial: 'comments/form', locals: { comment: Comment.new, new_comment: true, link: @link } %>

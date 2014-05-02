@@ -1,0 +1,11 @@
+<h1 id="sub_name"><%= @sub.name %></h1>
+<p><%= @sub.description %></p>
+
+<% @sub.links.each do |link| %>
+  <%= render partial: 'links/link', locals: { link: link } %>
+<% end %>
+
+<% if logged_in? %>
+  <h3>Add a Link!</h3>
+  <%= render partial: 'links/form', locals: { link: Link.new, current_sub: @sub } %>
+<% end %>

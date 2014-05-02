@@ -1,0 +1,9 @@
+<form action="<%= new_comment ? link_comments_url(link) : link_comment_url(link, comment) %>" method="post" accept-charset="utf-8">
+<%= form_auth_html %>
+<%= update_method_html unless new_comment %>
+<input type="hidden" name="comment[parent_comment_id]" value="<%= comment.parent_comment_id %>" id="parent_comment_id">
+<p><label for="comment">Comment</label></p>
+<textarea name="comment[body]" rows="8" cols="40" id="comment"><%= comment.body %></textarea>
+
+  <p><input type="submit" value="<%= new_comment ? "Create New Comment" : "Update Comment" %>"></p>
+</form>

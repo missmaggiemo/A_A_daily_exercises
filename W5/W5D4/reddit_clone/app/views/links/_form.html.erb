@@ -1,0 +1,27 @@
+<form action="<%= links_url %>" method="post" accept-charset="utf-8">
+  <%= form_auth_html %>
+  <table border="0" cellspacing="5" cellpadding="5">
+    <tr>
+      <td><label for="title">Title</label></td>
+      <td><input type="text" name="link[title]" value="<%= link.title %>" id="title"></td>
+    </tr>
+    <tr>
+      <td><label for="url">URL</label></td>
+      <td>
+        <input type="text" name="link[url]" value="<%= link.url %>" id="url">
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <label for="sub">Sub</label>
+      </td>
+      <td>
+        <input type="text" name="sub[name]" value="<%= current_sub.name if current_sub %>" id="sub">
+      </td>
+    </tr>
+
+  </table>
+
+  <p><input type="submit" value="Create New Link"></p>
+</form>
