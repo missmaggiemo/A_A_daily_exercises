@@ -95,5 +95,5 @@ W5D4
 
 W5D5
 
-[Tyler Hansen](https://github.com/TylerNHansen)
+[Tyler Hansen](https://github.com/TylerNHansen),
 Project: [goal_setter_app](https://github.com/TylerNHansen/goal_setter_app)
