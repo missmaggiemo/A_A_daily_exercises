@@ -92,3 +92,8 @@ Solo day!
 W5D4
 
 [Nathan Hsieh](http://github.com/nhsiehgit)
+
+W5D5
+
+[Tyler Hansen](https://github.com/TylerNHansen)
+Project: [goal_setter_app](https://github.com/TylerNHansen/goal_setter_app)
