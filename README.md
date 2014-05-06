@@ -97,3 +97,9 @@ W5D5
 
 [Tyler Hansen](https://github.com/TylerNHansen),
 Project: [goal_setter_app](https://github.com/TylerNHansen/goal_setter_app)
+
+### Week 6
+
+W6D1
+
+[Ester Weon](https://github.com/esthersweon)
