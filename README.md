@@ -61,15 +61,15 @@ W3D4
 
 W4D1
 
-[Tirso Peguero](github.com/tpeg88)
+[Tirso Peguero](https://github.com/tpeg88)
 
 W4D2
 
-[Bryan Phillips](github.com/bdphilly)
+[Bryan Phillips](https://github.com/bdphilly)
 
 W4D3
 
-[George Groh](github.com/Inglorion-G)
+[George Groh](https://github.com/Inglorion-G)
 
 W4D4
 
@@ -83,7 +83,7 @@ Solo day!
 
 W5D1
 
-[Rohan Sahai](github.com/rsahai91)
+[Rohan Sahai](https://github.com/rsahai91)
 
 W5D2
 
@@ -103,3 +103,7 @@ Project: [goal_setter_app](https://github.com/TylerNHansen/goal_setter_app)
 W6D1
 
 [Ester Weon](https://github.com/esthersweon)
+
+W6D2
+
+[Andrew Chen](https://github.com/hanji83)
