@@ -107,3 +107,7 @@ W6D1
 W6D2
 
 [Andrew Chen](https://github.com/hanji83)
+
+W6D3
+
+[Cristi Scheye](https://github.com/CristiScheye)
