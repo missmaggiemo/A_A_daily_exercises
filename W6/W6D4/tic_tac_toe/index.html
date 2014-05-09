@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="../jquery.js"></script>
+  <script type="text/javascript" src="../underscore.js"></script>
+  <script type="text/javascript" src="ticTacToe.js"></script>
+  <script type="text/javascript" src="ui.js"></script>
+  <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8">
+</head>
+<body>
+  <h1 id="tic_tac_toe">Tic Tac Toe</h1>
+  <div id="board">
+
+  </div>
+
+  <script type="text/javascript">
+    var game = new TTT.Game();
+    var ui =  new TTT.UI(game, $('#board'));
+    ui.setUpEvents();
+
+  </script>
+</body>
+</html>

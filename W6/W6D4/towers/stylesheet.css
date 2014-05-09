@@ -1,0 +1,29 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#container {
+  width: 640px;
+  margin: 20px auto;
+  display: table;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+.tower {
+  float: center;
+  vertical-align: bottom;
+  width: 200px;
+  height: 200px;
+  display: table-cell;
+  background-image: url('texture-wood-purgo.jpg');
+}
+
+.disc {
+  display: block;
+  line-height: 50px;
+  width: 200px;
+  height: 50px;
+  margin: auto;
+}

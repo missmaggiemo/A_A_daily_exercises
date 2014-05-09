@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="../jquery.js"></script>
+  <script type="text/javascript" src="../underscore.js"></script>
+  <script type="text/javascript" src="hanoi.js"></script>
+  <script type="text/javascript" src="ui.js"></script>
+  <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8">
+</head>
+<body>
+  <h1 id="towers">Towers of Hanoi</h1>
+  <div id="container">
+<!-- we want three towers, class = tower, data-id = tower number -->
+  </div>
+
+  <script type="text/javascript">
+    var game = new Hanoi.Game();
+    var ui =  new Hanoi.UI(game, $('#container'));
+    ui.setUpTowers();
+    ui.setUpDiscs();
+    ui.setUpEvents();
+
+  </script>
+</body>
+</html>
