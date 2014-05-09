@@ -111,3 +111,7 @@ W6D2
 W6D3
 
 [Cristi Scheye](https://github.com/CristiScheye)
+
+W6D4
+
+[Edward Breen](https://github.com/tedbreen)
