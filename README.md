@@ -1,6 +1,6 @@
 # README
 
-This repo keeps track of my daily partnered exercises at App Academy.
+This repository keeps track of my daily partnered exercises at [App Academy](http://www.appacademy.io).
 
 Each of these projects was completed with a partner.
 
