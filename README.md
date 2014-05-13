@@ -119,3 +119,9 @@ W6D4
 W6D5
 
 [Chris Cowell](https://github.com/cowell21)
+
+### Week 7
+
+W7D1
+
+[Shawna Mattison](https://github.com/shawndromat)
