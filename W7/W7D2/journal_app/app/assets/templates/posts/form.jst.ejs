@@ -1,0 +1,17 @@
+<h1 id="new_post">New Post</h1>
+
+<form id="form_post">
+<% var message = (newPost == true) ? "Create Post" : "Update Post"; %>
+<div id="title">
+  <label> Title:
+    <input type="text" name="post[title]" value="<%= post.escape('title') %>"></input>
+  </label>
+</div>
+<div id="body">
+  <label> Body:
+  <textarea name="post[body]"><%= post.escape('body') %></textarea>
+  </label>
+</div>
+
+<input type="submit" name="<%= message %>" class="submit_form">
+</form>
