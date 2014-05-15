@@ -1,0 +1,7 @@
+<h1>NewsReader Feeds</h1>
+
+<% feeds.each( function(feed){ %>
+<p><a href="#/feeds/<%= feed.id %>"><%= feed.escape('title') %></a></p>
+<% }); %>
+
+<!-- create a new feed? -->
