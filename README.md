@@ -127,6 +127,7 @@ W7D1
 [Shawna Mattison](https://github.com/shawndromat)
 Project: [photo_tagger](https://github.com/shawndromat/photo-tagger)
 
-W7D2
+W7D2 & W7D3
 
 [Robert Xu](https://github.com/RobertXu)
+
