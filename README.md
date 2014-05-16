@@ -131,3 +131,7 @@ W7D2 & W7D3
 
 [Robert Xu](https://github.com/RobertXu)
 
+W7D4
+
+[Shawna Mattison](https://github.com/shawndromat)
+Project: [First Bootstrap Project](https://github.com/shawndromat/bootstrapped)
