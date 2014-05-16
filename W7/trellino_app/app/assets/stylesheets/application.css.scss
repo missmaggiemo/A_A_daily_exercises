@@ -15,3 +15,37 @@
  *= require_self
  */
 
+#body {
+  margin: 70px 0;
+  width: 100vw;
+}
+
+.board-tile {
+  margin: 20px;
+  padding: 10px;
+  background-color: rgb(25, 149, 220);
+  border-radius: 10%;
+  color: white;
+  height: 15vw;  
+  
+  h1 {
+    color: white;
+  }
+  
+  #new-board {
+    color: white;
+  }
+  
+  p {
+    color: #FDFDFD;
+    height: 50%;
+  }
+}
+
+#new-board-tile form input {
+  color: #111;
+}
+
+button#create-board {
+  margin-top: 10px;
+}

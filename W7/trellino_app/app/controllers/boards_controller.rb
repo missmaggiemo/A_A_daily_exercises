@@ -2,8 +2,14 @@ class BoardsController < ApplicationController
 
   before_action :find_board, only: [:destroy, :show]
 
+  def index
+    @boards = Board.all
+    render json: @boards
+  end
+
+
   def create
-    @board = new Board(board_params)
+    @board = Board.new(board_params)
     if @board.save
       render json: @board
     else
@@ -28,7 +34,7 @@ class BoardsController < ApplicationController
   private
   
   def board_params
-    params.require(:board).permit(:title)
+    params.require(:board).permit(:title, :description)
   end
 
   def find_board
