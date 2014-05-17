@@ -4,11 +4,11 @@
 ### Make the show, index, and new page for boards.
 <!-- API for boards -->
 <!-- Rails routes for boards -->
-Backbone routes for boards
-Backbone model, collection, views for boards
-Backbone templates for boards
+<!-- Backbone routes for boards -->
+<!-- Backbone model, collection, views for boards -->
+<!-- Backbone templates for boards -->
 
-Is it working?
+Is it working? YES!
 
 
 ### Next, add lists to the boards.

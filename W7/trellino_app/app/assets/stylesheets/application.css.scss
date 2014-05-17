@@ -20,25 +20,37 @@
   width: 100vw;
 }
 
-.board-tile {
+
+
+
+.tile {
   margin: 20px;
   padding: 10px;
-  background-color: rgb(25, 149, 220);
   border-radius: 10%;
   color: white;
-  height: 15vw;  
   
-  h1 {
+  h1 a {
     color: white;
+    
+    &:hover {
+      text-decoration: none;
+    }
   }
-  
+}
+
+//boards
+
+.tile.board-tile {
+  background-color: rgb(25, 149, 220);
+  height: 15vw;  
+
   #new-board {
     color: white;
   }
   
   p {
     color: #FDFDFD;
-    height: 50%;
+    font-size: 1.2em;
   }
 }
 
@@ -48,4 +60,17 @@
 
 button#create-board {
   margin-top: 10px;
+}
+
+
+//lists
+
+.tile.list-tile {
+  
+  background-color: rgb(68, 186, 117);
+  min-height: 15vw;
+  
+  #new-list {
+    color: white;
+  } 
 }

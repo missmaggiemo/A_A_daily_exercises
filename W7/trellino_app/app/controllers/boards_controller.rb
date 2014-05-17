@@ -27,7 +27,7 @@ class BoardsController < ApplicationController
   end
   
   def show
-    render json: @board
+    render json: @board, include: :lists
   end
   
   

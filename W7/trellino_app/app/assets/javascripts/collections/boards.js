@@ -5,7 +5,9 @@ window.TrellinoApp.Collections.Boards = Backbone.Collection.extend({
 
   getOrFetch: function(id) {
     var model;
+    
     var boards = this;
+    
     if (model = this.get(id)) {
       model.fetch();
       return model;
@@ -20,5 +22,5 @@ window.TrellinoApp.Collections.Boards = Backbone.Collection.extend({
   
 });
 
-window.TrellinoApp.Collections.boards = new window.TrellinoApp.Collections.Boards()
+window.TrellinoApp.Collections.boards = new window.TrellinoApp.Collections.Boards();
 

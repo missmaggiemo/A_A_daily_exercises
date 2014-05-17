@@ -1,6 +1,6 @@
 window.TrellinoApp.Views.BoardsTile = Backbone.View.extend({
   
-  template: JST["boards/index_tile"],
+  template: JST["boards/board_tile"],
   
   className: "col-md-3",
   
@@ -32,7 +32,6 @@ window.TrellinoApp.Views.BoardsIndex = Backbone.TileView.extend({
   },
   
   render: function () {
-    console.log(this.collection);
     var renderedContent = this.template({ boards: this.collection });
     this.$el.html(renderedContent);
     
