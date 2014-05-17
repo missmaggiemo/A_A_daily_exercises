@@ -12,11 +12,10 @@ Is it working? YES!
 
 
 ### Next, add lists to the boards.
-API for lists
-Rails routes for lists
-Backbone routes for lists
-Backbone model, collection, views for lists
-Backbone templates for lists
+<!-- API for lists -->
+<!-- Rails routes for lists -->
+<!-- Backbone model, collection, views for lists -->
+<!-- Backbone templates for lists -->
 
 Is it working?
 
@@ -24,7 +23,6 @@ Is it working?
 ### Then add cards to the lists.
 API for cards
 Rails routes for cards
-Backbone routes for cards
 Backbone model, collection, views for cards
 Backbone templates for cards
 

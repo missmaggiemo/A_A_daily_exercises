@@ -29,7 +29,7 @@ window.TrellinoApp.Views.BoardsShow = Backbone.CompositeView.extend({
     
     this.addSubview("#tile-container", listsShowView);
     listsShowView.render();
-    this.$el.find("#tile-container").prepend(JST['new_list_placeholder']());
+    this.$el.find("#tile-container").prepend(JST['lists/new_list_placeholder']());
   },
 
   removeList: function (list) {
@@ -50,7 +50,7 @@ window.TrellinoApp.Views.BoardsShow = Backbone.CompositeView.extend({
 
     this.renderSubviews();
     
-    this.$el.find("#tile-container").prepend(JST['new_list_placeholder']());
+    this.$el.find("#tile-container").prepend(JST['lists/new_list_placeholder']());
 
     return this;
   }
