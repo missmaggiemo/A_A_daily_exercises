@@ -135,3 +135,7 @@ W7D4
 
 [Shawna Mattison](https://github.com/shawndromat)
 Project: [First Bootstrap Project](https://github.com/shawndromat/bootstrapped)
+
+W7D5
+
+Solo day! Project: Trellino
