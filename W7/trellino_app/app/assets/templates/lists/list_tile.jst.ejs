@@ -1,6 +1,10 @@
 <div class="tile list-tile">
   <h1 class="list-header"><a href="#<%= list.url() %>"><%= list.escape('title') %></a></h1>
   <div class="card-container">
+    
+    <div id="new-card-tile">
+      <a data-id="<%= list.id %>" href="#"><span class="glyphicon glyphicon-plus"></span></a>
+    </div>
+    
   </div>
-  <button class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span></button>
 </div>

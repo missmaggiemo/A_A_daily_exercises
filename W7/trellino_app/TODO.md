@@ -33,6 +33,8 @@ Is it working?
 ### Then add drag and drop functionality.
 Draggable class?
 
+**Everything draggable and sortable by end of Monday.
+
 
 ### Then make that card modal view.
 

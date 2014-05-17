@@ -9,6 +9,29 @@ window.TrellinoApp.Models.List = Backbone.Model.extend({
     delete json.updated_at;
 
     return json;
+  },
+  
+  
+  cards: function () {
+    // lets you not fetch the collection every time
+    if (!this._cards) {
+      // underscore means private variable
+      this._cards = new TrellinoApp.Collections.ListCards([], {
+        board: this
+      });
+    }
+
+    return this._cards;
+  },
+  
+  parse: function (jsonResp) {
+    if (jsonResp.cards) {
+      this.cards().set(jsonResp.cards);
+      // sets cards from response as part of json response, not an attribute
+      delete jsonResp.cards;
+    }
+
+    return jsonResp;
   }
   
 });
