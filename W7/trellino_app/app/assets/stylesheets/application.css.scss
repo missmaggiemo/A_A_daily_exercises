@@ -1,0 +1,95 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require bootstrap
+ *= require_self
+ */
+
+#body {
+  margin: 70px 0;
+  width: 100vw;
+}
+
+
+
+
+.tile {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10%;
+  color: white;
+  
+  h1 a {
+    color: white;
+    
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+//boards
+
+.tile.board-tile {
+  background-color: rgb(25, 149, 220);
+  height: 15vw;  
+
+  #new-board {
+    color: white;
+  }
+  
+  p {
+    color: #FDFDFD;
+    font-size: 1.2em;
+  }
+}
+
+#new-board-tile form input {
+  color: #111;
+}
+
+button#create-board {
+  margin-top: 10px;
+}
+
+
+//lists
+
+.tile.list-tile {
+  
+  background-color: rgb(68, 186, 117);
+  min-height: 15vw;
+  
+  #new-list {
+    color: white;
+  } 
+}
+
+.card-tile {
+  width: 100%;
+  
+  p {
+    background-color: rgb(214, 240, 225);
+    color: rgb(68, 186, 117);
+    margin: 10px;
+    border-radius: 10%;
+  }
+  
+  textarea {
+    margin: 10px;
+  }
+}
+
+#new-card-tile a {
+  color: white;
+}
