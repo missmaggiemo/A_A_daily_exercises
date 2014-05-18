@@ -17,6 +17,12 @@ window.TrellinoApp.Models.Board = Backbone.Model.extend({
     if (jsonResp.lists) {
       this.lists().set(jsonResp.lists);
       // sets lists from response as part of json response, not an attribute
+      
+      this.lists().each(function(model, index){
+        model.cards().set(jsonResp.lists[index].cards);
+      });
+      // set cards on each list
+      
       delete jsonResp.lists;
     }
 

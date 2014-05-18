@@ -27,7 +27,7 @@ class ListsController < ApplicationController
   end
   
   def show
-    render json: @list, include: :lists
+    render json: @list, include: :cards
   end
   
   

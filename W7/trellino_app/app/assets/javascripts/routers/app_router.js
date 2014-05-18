@@ -6,7 +6,6 @@ window.TrellinoApp.Routers.AppRouter = Backbone.Router.extend({
   },
   
   boardsIndex: function () {
-    TrellinoApp.Collections.boards.fetch();
     
     var boards = TrellinoApp.Collections.boards;
     var indexView = new TrellinoApp.Views.BoardsIndex({

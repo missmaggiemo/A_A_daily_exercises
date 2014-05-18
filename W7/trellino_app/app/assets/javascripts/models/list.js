@@ -17,7 +17,7 @@ window.TrellinoApp.Models.List = Backbone.Model.extend({
     if (!this._cards) {
       // underscore means private variable
       this._cards = new TrellinoApp.Collections.ListCards([], {
-        board: this
+        list: this
       });
     }
 

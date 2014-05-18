@@ -7,11 +7,11 @@ window.TrellinoApp.Views.CardsShow = Backbone.View.extend({
   
   template: JST["cards/card_tile"],
 
-
+  className: 'cards card-tile',
   
   render: function () {
     var renderedContent = this.template({
-      list: this.model
+      card: this.model
     });
   
     this.$el.html(renderedContent);

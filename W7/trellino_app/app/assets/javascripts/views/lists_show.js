@@ -36,9 +36,9 @@ window.TrellinoApp.Views.ListsShow = Backbone.CompositeView.extend({
       model: card
     });
     
-    this.addSubview("#tile-container", cardsShowView);
+    this.addSubview("#card-container", cardsShowView);
     cardsShowView.render();
-    this.$el.find("#tile-container").prepend(JST['cards/new_card_placeholder']());
+    this.$el.find("#card-container").prepend(JST['cards/new_card_placeholder']({ list: this.model }));
   },
   
   removeCard: function (card) {
@@ -54,12 +54,9 @@ window.TrellinoApp.Views.ListsShow = Backbone.CompositeView.extend({
     var renderedContent = this.template({
       list: this.model
     });
-  
     this.$el.html(renderedContent);
-  
     this.renderSubviews();
-    
-    this.$el.find("#tile-container").prepend(JST['lists/new_list_placeholder']());
+    this.$el.find("#card-container").append(JST['cards/new_card_placeholder']({ list: this.model }));
   
     return this;
   },

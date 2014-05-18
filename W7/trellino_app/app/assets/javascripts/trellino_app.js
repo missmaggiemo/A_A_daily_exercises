@@ -12,6 +12,7 @@ window.TrellinoApp = {
   }
 };
 
+
 Backbone.CompositeView = Backbone.View.extend({
   addSubview: function (selector, subview) {
     var selectorSubviews =
