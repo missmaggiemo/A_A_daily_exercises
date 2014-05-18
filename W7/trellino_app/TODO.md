@@ -20,7 +20,7 @@ Is it working? YES!
 Is it working?
 
 
-### Then add cards to the lists.
+### Then add cards to the lists..
 <!-- API for cards -->
 <!-- Rails routes for cards -->
 <!-- Backbone model, collection, views for cards -->
@@ -40,6 +40,20 @@ Is it working?
 
 ### Then make that card modal view.
 
-WTF is modal?
+WTF is modal? Read on modal views in directions.
+
+
+### Click to edit.
+Click to edit board title.
+Click to edit board description.
+Click to edit list title.
+Click to edit card content.
+
+
+### Add users.
+Users log in, etc. Devise?
+Users have boards.
+Can give other users access to boards.
+
 
 ### Congratulations, you just made Trellino.
