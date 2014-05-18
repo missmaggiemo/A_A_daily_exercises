@@ -33,10 +33,12 @@ class ListsController < ApplicationController
   def update_order
     puts params
     if params[:list].length > 0
-      @board = Board.find(params[:board_id])
-      @board.lists.each.with_index do |list, index|
-        sort_id = params[:list][index] == 0 ? index : params[:list][index]
-        list.update(sort_id: sort_id)
+      order = 1
+      params[:list].each do |list_i|
+        if list = List.find(list_i)
+          list.update(sort_id: order)
+          order += 1
+        end
       end
       head :ok
     else

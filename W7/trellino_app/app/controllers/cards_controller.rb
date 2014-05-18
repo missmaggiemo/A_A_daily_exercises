@@ -33,10 +33,12 @@ class CardsController < ApplicationController
   
   def update_order
     if params[:card].length > 0
-      @list = List.find(params[:list_id])
-      @list.cards.each.with_index do |card, index|
-        sort_id = params[:card][index] == 0 ? index : params[:card][index]
-        card.update(sort_id: sort_id)
+      order = 1
+      params[:card].each do |card_i|
+        if card = Card.find(card_i)
+          card.update(sort_id: order)
+          order += 1
+        end
       end
       head :ok
     else

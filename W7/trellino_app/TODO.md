@@ -33,7 +33,7 @@ Is it working?
 ### Then add drag and drop functionality.
 <!-- Sortable class -->
 
-Fix bug in my sortable class.
+<!-- Fix bug in my sortable class. -->
 
 **Everything draggable and sortable by end of Monday.
 

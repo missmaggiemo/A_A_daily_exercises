@@ -15,7 +15,7 @@ window.TrellinoApp.Views.ListsShow = Backbone.CompositeView.extend({
     this.listenTo(this.model.cards(), "remove", this.removeCard);
 
     this.model.cards().each(this.addCard.bind(this));
-    this.$el.attr('id', 'list-' + this.model.get('sort_id'));
+    this.$el.attr('id', 'list-' + this.model.id);
   },
   
   events: {

@@ -32,8 +32,12 @@ class BoardsController < ApplicationController
   
   def update_order
     if update_order_params.length > 0
-      Board.all.each.with_index do |board, index|
-        board.update(sort_id: update_order_params[index])
+      order = 1
+      update_order_params.each do |board_i|
+        if board = Board.find(board_i)
+          board.update(sort_id: order)
+          order += 1
+        end
       end
       head :ok
     else

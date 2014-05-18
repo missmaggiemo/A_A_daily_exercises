@@ -10,7 +10,7 @@ window.TrellinoApp.Views.CardsShow = Backbone.View.extend({
   className: 'cards card-tile',
   
   initialize: function (options) {
-    this.$el.attr('id', 'card-' + this.model.get('sort_id'));
+    this.$el.attr('id', 'card-' + this.model.id);
   },
   
   render: function () {
