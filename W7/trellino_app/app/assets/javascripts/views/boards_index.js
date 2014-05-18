@@ -2,15 +2,20 @@ window.TrellinoApp.Views.BoardsTile = Backbone.View.extend({
   
   template: JST["boards/board_tile"],
   
-  className: "col-md-3",
+  className: "boards col-md-3",
+  
+  initialize: function (options) {
+    this.$el.attr('id', "board-" + this.model.id);
+  },
   
   render: function () {
     var renderedContent = this.template({ board: this.model });
-
+    
     this.$el.html(renderedContent);
 
     return this;
   }
+
   
 });
 
@@ -39,6 +44,25 @@ window.TrellinoApp.Views.BoardsIndex = Backbone.TileView.extend({
     
     this.renderSubviews();
     this.$el.find('#tile-container').prepend(this.newTilePlaceholderTemplate());
+    this.$el.find('#tile-container').sortable({
+      tolerance: 'pointer',
+      revert: 'invalid',
+      placeholder: 'col-md-3 sort-placeholder',
+      forceHelperSize: true,
+      update: function(event, ui) {
+        var data = $(this).sortable('serialize');
+        console.log(data);
+        $.ajax({
+          data: data,
+          type: 'POST',
+          url: '/boards/update_order',
+          success: function () {
+            console.log('heyo');
+          }
+        });
+      }
+    });
+   
     return this;
   }
   

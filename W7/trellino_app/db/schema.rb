@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140517000932) do
+ActiveRecord::Schema.define(version: 20140518073229) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,8 +21,10 @@ ActiveRecord::Schema.define(version: 20140517000932) do
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "sort_id"
   end
 
+  add_index "boards", ["sort_id"], name: "index_boards_on_sort_id", using: :btree
   add_index "boards", ["title"], name: "index_boards_on_title", unique: true, using: :btree
 
   create_table "cards", force: true do |t|
@@ -30,18 +32,22 @@ ActiveRecord::Schema.define(version: 20140517000932) do
     t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "sort_id"
   end
 
   add_index "cards", ["list_id"], name: "index_cards_on_list_id", using: :btree
+  add_index "cards", ["sort_id"], name: "index_cards_on_sort_id", using: :btree
 
   create_table "lists", force: true do |t|
     t.string   "title",      null: false
     t.integer  "board_id",   null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "sort_id"
   end
 
   add_index "lists", ["board_id"], name: "index_lists_on_board_id", using: :btree
+  add_index "lists", ["sort_id"], name: "index_lists_on_sort_id", using: :btree
   add_index "lists", ["title", "board_id"], name: "index_lists_on_title_and_board_id", unique: true, using: :btree
 
 end

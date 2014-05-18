@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require bootstrap
+ *= require jquery.ui.all
  *= require_self
  */
 
@@ -39,6 +40,17 @@
   }
 }
 
+
+.sort-placeholder {
+  border: 1px dashed #111;
+  border-radius: 10px;
+}
+
+.col-md-3.sort-placeholder {
+  height: 15vw;
+  min-height: 100px;
+}
+
 //boards
 
 #board-title {
@@ -52,7 +64,8 @@
 
 .tile.board-tile {
   background-color: rgb(25, 149, 220);
-  height: 15vw;  
+  height: 15vw;
+  min-height: 100px;
 
   #new-board {
     color: white;
@@ -88,6 +101,7 @@ button#create-board {
 .card-tile {
   width: 100%;
   padding: 5px;
+  min-height: 20px;
   
   p {
     background-color: rgb(214, 240, 225);

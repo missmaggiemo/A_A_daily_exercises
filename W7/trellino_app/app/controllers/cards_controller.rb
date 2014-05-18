@@ -4,13 +4,14 @@ class CardsController < ApplicationController
 
   def index
     @cards = Card.all
-    render json: @cards
+    render json: @cards.sort_by(&:sort_id)
   end
 
 
   def create
     @card = Card.new(card_params)
     if @card.save
+      @card.update(sort_id: @card.id)
       render json: @card
     else
       render json: @card.errors.full_messages, status: 422      
@@ -30,6 +31,17 @@ class CardsController < ApplicationController
     render json: @card, include: :cards
   end
   
+  def update_order
+    if params[:card].length > 0
+      @list = List.find(params[:list_id])
+      @list.cards.each.with_index do |card, index|
+        card.update(sort_id: params[:card][index])
+      end
+      head :ok
+    else
+      render json: "Oh no!", status: 422
+    end
+  end
   
   private
   

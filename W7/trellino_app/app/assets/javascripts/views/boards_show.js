@@ -21,7 +21,7 @@ window.TrellinoApp.Views.BoardsShow = Backbone.CompositeView.extend({
     this.$el.find('#new-list-tile').replaceWith(newView.render().$el);
     return this;
   },
-
+  
   addList: function (list) {
     var listsShowView = new TrellinoApp.Views.ListsShow({
       model: list
@@ -51,7 +51,28 @@ window.TrellinoApp.Views.BoardsShow = Backbone.CompositeView.extend({
     this.renderSubviews();
     
     this.$el.find("#tile-container").prepend(JST['lists/new_list_placeholder']());
-
+    
+    var view = this;
+    
+    this.$el.find('#tile-container').sortable({
+      tolerance: 'pointer',
+      revert: 'invalid',
+      placeholder: 'col-md-3 sort-placeholder',
+      forceHelperSize: true,
+      update: function(event, ui) {
+        var data = $(this).sortable('serialize') + '&board_id=' + view.model.id;
+        console.log(data);
+        $.ajax({
+          data: data,
+          type: 'POST',
+          url: '/lists/update_order',
+          success: function () {
+            console.log('heyo');
+          }
+        });
+      }
+    });
+    
     return this;
   }
   
