@@ -21,23 +21,25 @@ Is it working?
 
 
 ### Then add cards to the lists.
-API for cards
-Rails routes for cards
-Backbone model, collection, views for cards
-Backbone templates for cards
+<!-- API for cards -->
+<!-- Rails routes for cards -->
+<!-- Backbone model, collection, views for cards -->
+<!-- Backbone templates for cards -->
 
 Is it working?
 
 
 
 ### Then add drag and drop functionality.
-Draggable class?
+<!-- Sortable class -->
+
+Fix bug in my sortable class.
 
 **Everything draggable and sortable by end of Monday.
 
 
 ### Then make that card modal view.
 
-
+WTF is modal?
 
 ### Congratulations, you just made Trellino.
