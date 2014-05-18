@@ -1,4 +1,4 @@
 <div class="tile board-tile">
   <h1 class="board-header"><a href="#<%= board.url() %>"><%= board.escape('title') %></a></h1>
-  <p class="board-descrip"><%= (board.escape('description').length > 50) ? (board.escape('description').substring(0, 50) + "...") : board.escape('description') %></p>
+  <p class="board-descrip"><%= (board.escape('description').length > 75) ? (board.escape('description').substring(0, 75) + "...") : board.escape('description') %></p>
 </div>

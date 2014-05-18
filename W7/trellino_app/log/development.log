@@ -96330,3 +96330,2049 @@ Completed 200 OK in 13ms (Views: 5.8ms | ActiveRecord: 4.8ms)
 
 
 Started GET "/assets/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-05-18 08:50:27 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-18 08:54:34 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (0.0ms)
+Completed 200 OK in 255ms (Views: 254.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/boards.css?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/cards.css?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.core.css?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.accordion.css?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.theme.css?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.menu.css?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.css?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.button.css?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.css?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.resizable.css?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.dialog.css?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.progressbar.css?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.selectable.css?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.spinner.css?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.slider.css?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.tabs.css?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.tooltip.css?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.all.css?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.base.css?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.accordion.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.droppable.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.effect-blind.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.effect-bounce.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.effect-clip.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.effect-drop.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.effect-explode.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.effect-fold.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.effect-fade.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.effect-highlight.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.effect-pulsate.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.effect-scale.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.effect-shake.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.effect-slide.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.effect-transfer.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.progressbar.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.selectable.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.slider.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.spinner.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.tabs.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.tooltip.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.ui.all.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/jquery.serializejson.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/trellino_app.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/boards/board_tile.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/boards/index.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/boards/new.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/boards/new_board_placeholder.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/boards/show.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/cards/card_tile.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/cards/new.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/cards/new_card_placeholder.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/lists/index.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/lists/list_tile.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/lists/new.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/lists/new_list_placeholder.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/models/board.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/models/card.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/models/list.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/collections/board_lists.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/collections/boards.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/collections/list_cards.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:35 -0700
+
+
+Started GET "/assets/views/boards_index.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:36 -0700
+
+
+Started GET "/assets/views/boards_new.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:36 -0700
+
+
+Started GET "/assets/views/boards_show.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:36 -0700
+
+
+Started GET "/assets/views/cards_new.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:36 -0700
+
+
+Started GET "/assets/views/cards_show.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:36 -0700
+
+
+Started GET "/assets/views/lists_new.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:36 -0700
+
+
+Started GET "/assets/views/lists_show.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:36 -0700
+
+
+Started GET "/assets/routers/app_router.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:36 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:36 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:36 -0700
+
+
+Started GET "/assets/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:36 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:36 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:36 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:36 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:36 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:36 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:36 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:36 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:36 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:36 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-18 08:54:36 -0700
+
+
+Started GET "/boards/1" for 127.0.0.1 at 2014-05-18 08:54:36 -0700
+Processing by BoardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (0.6ms)[0m  [1mSELECT  "boards".* FROM "boards"  WHERE "boards"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mList Load (0.6ms)[0m  SELECT "lists".* FROM "lists"  WHERE "lists"."board_id" = 1  ORDER BY "lists"."sort_id" ASC
+  [1m[36mCard Load (0.6ms)[0m  [1mSELECT "cards".* FROM "cards"  WHERE "cards"."list_id" = 4  ORDER BY "cards"."sort_id" ASC[0m
+  [1m[35mCard Load (0.5ms)[0m  SELECT "cards".* FROM "cards"  WHERE "cards"."list_id" = 3  ORDER BY "cards"."sort_id" ASC
+  [1m[36mCard Load (0.6ms)[0m  [1mSELECT "cards".* FROM "cards"  WHERE "cards"."list_id" = 1  ORDER BY "cards"."sort_id" ASC[0m
+Completed 200 OK in 10ms (Views: 4.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-05-18 08:54:36 -0700
+
+
+Started GET "/boards" for 127.0.0.1 at 2014-05-18 08:54:45 -0700
+Processing by BoardsController#index as JSON
+  [1m[35mBoard Load (2.8ms)[0m  SELECT "boards".* FROM "boards"
+Completed 200 OK in 5ms (Views: 0.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/boards/1" for 127.0.0.1 at 2014-05-18 08:55:02 -0700
+Processing by BoardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (10.9ms)[0m  [1mSELECT  "boards".* FROM "boards"  WHERE "boards"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mList Load (1.2ms)[0m  SELECT "lists".* FROM "lists"  WHERE "lists"."board_id" = 1  ORDER BY "lists"."sort_id" ASC
+  [1m[36mCard Load (2.5ms)[0m  [1mSELECT "cards".* FROM "cards"  WHERE "cards"."list_id" = 4  ORDER BY "cards"."sort_id" ASC[0m
+  [1m[35mCard Load (1.9ms)[0m  SELECT "cards".* FROM "cards"  WHERE "cards"."list_id" = 3  ORDER BY "cards"."sort_id" ASC
+  [1m[36mCard Load (0.9ms)[0m  [1mSELECT "cards".* FROM "cards"  WHERE "cards"."list_id" = 1  ORDER BY "cards"."sort_id" ASC[0m
+Completed 200 OK in 27ms (Views: 7.4ms | ActiveRecord: 17.4ms)
+
+
+Started POST "/cards/update_order" for 127.0.0.1 at 2014-05-18 08:56:48 -0700
+Processing by CardsController#update_order as */*
+  Parameters: {"card"=>["1", "2", "3"], "new-card"=>["tile"], "list_id"=>"1"}
+  [1m[35mCard Load (0.4ms)[0m  SELECT  "cards".* FROM "cards"  WHERE "cards"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mCard Load (0.7ms)[0m  [1mSELECT  "cards".* FROM "cards"  WHERE "cards"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mCard Load (0.3ms)[0m  SELECT  "cards".* FROM "cards"  WHERE "cards"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 9ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (0.0ms)
+Completed 200 OK in 66ms (Views: 65.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/boards.css?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/cards.css?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.core.css?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.theme.css?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.accordion.css?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.button.css?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.menu.css?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.css?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.css?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.resizable.css?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.dialog.css?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.selectable.css?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.progressbar.css?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.slider.css?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.spinner.css?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.tabs.css?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.tooltip.css?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.base.css?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.all.css?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.accordion.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.droppable.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.effect-blind.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.effect-bounce.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.effect-clip.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.effect-drop.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.effect-explode.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.effect-fade.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.effect-fold.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.effect-highlight.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.effect-pulsate.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.effect-scale.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.effect-shake.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.effect-slide.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.effect-transfer.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.progressbar.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.selectable.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:51 -0700
+
+
+Started GET "/assets/jquery.ui.slider.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/jquery.ui.spinner.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/jquery.ui.tabs.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/jquery.ui.tooltip.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/jquery.ui.all.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/jquery.serializejson.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/trellino_app.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/boards/board_tile.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/boards/index.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/boards/new.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/boards/new_board_placeholder.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/boards/show.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/cards/card_tile.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/cards/new.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/cards/new_card_placeholder.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/lists/index.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/lists/list_tile.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/lists/new.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/lists/new_list_placeholder.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/models/board.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/models/card.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/models/list.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/collections/board_lists.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/collections/boards.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/collections/list_cards.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/views/boards_index.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/views/boards_new.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/views/boards_show.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/views/cards_new.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/views/cards_show.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/views/lists_new.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/views/lists_show.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/routers/app_router.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/jquery.ui.droppable.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/jquery.ui.effect-scale.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/jquery.ui.effect-transfer.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/jquery.ui.progressbar.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/jquery.ui.selectable.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/jquery.ui.slider.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/jquery.ui.tabs.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/jquery.ui.tooltip.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/lists/list_tile.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/models/list.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/views/boards_new.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/views/cards_show.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/views/lists_show.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started GET "/boards/1" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+Processing by BoardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (0.4ms)[0m  [1mSELECT  "boards".* FROM "boards"  WHERE "boards"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mList Load (0.6ms)[0m  SELECT "lists".* FROM "lists"  WHERE "lists"."board_id" = 1  ORDER BY "lists"."sort_id" ASC
+  [1m[36mCard Load (0.5ms)[0m  [1mSELECT "cards".* FROM "cards"  WHERE "cards"."list_id" = 4  ORDER BY "cards"."sort_id" ASC[0m
+  [1m[35mCard Load (0.4ms)[0m  SELECT "cards".* FROM "cards"  WHERE "cards"."list_id" = 3  ORDER BY "cards"."sort_id" ASC
+  [1m[36mCard Load (0.7ms)[0m  [1mSELECT "cards".* FROM "cards"  WHERE "cards"."list_id" = 1  ORDER BY "cards"."sort_id" ASC[0m
+Completed 200 OK in 8ms (Views: 4.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-05-18 08:56:52 -0700
+
+
+Started POST "/cards" for 127.0.0.1 at 2014-05-18 08:57:37 -0700
+Processing by CardsController#create as JSON
+  Parameters: {"list_id"=>"3", "content"=>"content!", "card"=>{"list_id"=>"3", "content"=>"content!"}}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "cards" ("content", "created_at", "list_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "content!"], ["created_at", "2014-05-18 15:57:37.746755"], ["list_id", 3], ["updated_at", "2014-05-18 15:57:37.746755"]]
+  [1m[35m (98.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "cards" SET "sort_id" = $1, "updated_at" = $2 WHERE "cards"."id" = 4  [["sort_id", 4], ["updated_at", "2014-05-18 15:57:37.848580"]]
+  [1m[36m (66.6ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 173ms (Views: 0.5ms | ActiveRecord: 166.6ms)
+
+
+Started GET "/boards" for 127.0.0.1 at 2014-05-18 08:59:26 -0700
+Processing by BoardsController#index as JSON
+  [1m[35mBoard Load (1.3ms)[0m  SELECT "boards".* FROM "boards"
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+Completed 200 OK in 79ms (Views: 78.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/boards.css?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/cards.css?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/jquery.ui.core.css?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/jquery.ui.theme.css?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/jquery.ui.accordion.css?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/jquery.ui.menu.css?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.css?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/jquery.ui.button.css?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.css?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/jquery.ui.resizable.css?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/jquery.ui.dialog.css?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/jquery.ui.progressbar.css?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/jquery.ui.selectable.css?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/jquery.ui.slider.css?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/jquery.ui.spinner.css?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/jquery.ui.tabs.css?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/jquery.ui.tooltip.css?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/jquery.ui.base.css?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/jquery.ui.all.css?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/jquery.ui.accordion.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:53 -0700
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.droppable.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.effect-blind.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.effect-bounce.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.effect-clip.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.effect-drop.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.effect-explode.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.effect-fade.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.effect-fold.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.effect-highlight.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.effect-pulsate.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.effect-scale.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.effect-shake.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.effect-slide.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.effect-transfer.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.progressbar.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.selectable.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.slider.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.spinner.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.tabs.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.tooltip.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.all.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.serializejson.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/trellino_app.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/boards/board_tile.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/boards/index.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/boards/new.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/boards/new_board_placeholder.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/boards/show.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/cards/card_tile.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/cards/new.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/cards/new_card_placeholder.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/lists/index.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/lists/list_tile.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/lists/new.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/lists/new_list_placeholder.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/models/board.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/models/card.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/models/list.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/collections/board_lists.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/collections/boards.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/collections/list_cards.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/views/boards_index.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/views/boards_new.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/views/boards_show.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/views/cards_new.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/views/cards_show.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/views/lists_new.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/views/lists_show.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/routers/app_router.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.accordion.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.effect-bounce.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.effect-clip.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.effect-explode.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.effect-highlight.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.effect-scale.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.effect-shake.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.effect-slide.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.progressbar.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.selectable.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.slider.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.spinner.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.tabs.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.ui.tooltip.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/jquery.serializejson.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/trellino_app.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/boards/board_tile.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/boards/index.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/boards/new.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/boards/new_board_placeholder.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/lists/list_tile.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/lists/new.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/lists/new_list_placeholder.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/models/board.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/models/list.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:54 -0700
+
+
+Started GET "/assets/collections/board_lists.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:55 -0700
+
+
+Started GET "/assets/collections/boards.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:55 -0700
+
+
+Started GET "/assets/collections/list_cards.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:55 -0700
+
+
+Started GET "/assets/views/boards_new.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:55 -0700
+
+
+Started GET "/assets/views/boards_show.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:55 -0700
+
+
+Started GET "/assets/views/cards_show.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:55 -0700
+
+
+Started GET "/assets/views/lists_new.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:55 -0700
+
+
+Started GET "/assets/views/lists_show.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:55 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:55 -0700
+
+
+Started GET "/assets/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:55 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:55 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:55 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:55 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:55 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:55 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:55 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:55 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:55 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:55 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-18 08:59:55 -0700
+
+
+Started GET "/boards" for 127.0.0.1 at 2014-05-18 08:59:55 -0700
+Processing by BoardsController#index as JSON
+  [1m[36mBoard Load (0.4ms)[0m  [1mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-05-18 08:59:55 -0700
+
+
+Started POST "/boards" for 127.0.0.1 at 2014-05-18 09:00:21 -0700
+Processing by BoardsController#create as JSON
+  Parameters: {"title"=>"Board Test", "description"=>"What if I made a board with a really long description? Bacon ipsum dolor sit amet ribeye ad in, non tongue shankle turducken dolore ball tip porchetta cow id ea. Tempor beef meatball, turducken tongue elit ex turkey aute in reprehenderit capicola consectetur venison chuck. Ad salami velit ribeye, deserunt beef frankfurter labore consequat. Fatback non pork belly pork chop filet mignon aliqua ham hock turducken in ut.", "board"=>{"title"=>"Board Test", "description"=>"What if I made a board with a really long description? Bacon ipsum dolor sit amet ribeye ad in, non tongue shankle turducken dolore ball tip porchetta cow id ea. Tempor beef meatball, turducken tongue elit ex turkey aute in reprehenderit capicola consectetur venison chuck. Ad salami velit ribeye, deserunt beef frankfurter labore consequat. Fatback non pork belly pork chop filet mignon aliqua ham hock turducken in ut."}}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mBoard Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "boards"  WHERE "boards"."title" = 'Board Test' LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "boards" ("created_at", "description", "title", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-05-18 16:00:21.053222"], ["description", "What if I made a board with a really long description? Bacon ipsum dolor sit amet ribeye ad in, non tongue shankle turducken dolore ball tip porchetta cow id ea. Tempor beef meatball, turducken tongue elit ex turkey aute in reprehenderit capicola consectetur venison chuck. Ad salami velit ribeye, deserunt beef frankfurter labore consequat. Fatback non pork belly pork chop filet mignon aliqua ham hock turducken in ut."], ["title", "Board Test"], ["updated_at", "2014-05-18 16:00:21.053222"]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mBoard Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "boards"  WHERE ("boards"."title" = 'Board Test' AND "boards"."id" != 3) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "boards" SET "sort_id" = $1, "updated_at" = $2 WHERE "boards"."id" = 3  [["sort_id", 3], ["updated_at", "2014-05-18 16:00:21.059224"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/boards/3" for 127.0.0.1 at 2014-05-18 09:00:23 -0700
+Processing by BoardsController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[35mBoard Load (1.5ms)[0m  SELECT  "boards".* FROM "boards"  WHERE "boards"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mList Load (0.8ms)[0m  [1mSELECT "lists".* FROM "lists"  WHERE "lists"."board_id" = 3  ORDER BY "lists"."sort_id" ASC[0m
+Completed 200 OK in 7ms (Views: 1.8ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/lists" for 127.0.0.1 at 2014-05-18 09:00:36 -0700
+Processing by ListsController#create as JSON
+  Parameters: {"board_id"=>"3", "title"=>"bacon", "list"=>{"title"=>"bacon", "board_id"=>"3"}}
+  [1m[35m (47.0ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "lists" ("board_id", "created_at", "title", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["board_id", 3], ["created_at", "2014-05-18 16:00:37.020838"], ["title", "bacon"], ["updated_at", "2014-05-18 16:00:37.020838"]]
+  [1m[35m (2.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "lists" SET "sort_id" = $1, "updated_at" = $2 WHERE "lists"."id" = 5  [["sort_id", 5], ["updated_at", "2014-05-18 16:00:37.025905"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 57ms (Views: 0.4ms | ActiveRecord: 51.0ms)
+
+
+Started POST "/cards" for 127.0.0.1 at 2014-05-18 09:00:44 -0700
+Processing by CardsController#create as JSON
+  Parameters: {"list_id"=>"5", "content"=>"fuck yeah, bacon", "card"=>{"list_id"=>"5", "content"=>"fuck yeah, bacon"}}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cards" ("content", "created_at", "list_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "fuck yeah, bacon"], ["created_at", "2014-05-18 16:00:44.437639"], ["list_id", 5], ["updated_at", "2014-05-18 16:00:44.437639"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "cards" SET "sort_id" = $1, "updated_at" = $2 WHERE "cards"."id" = 5  [["sort_id", 5], ["updated_at", "2014-05-18 16:00:44.440083"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/boards" for 127.0.0.1 at 2014-05-18 09:01:01 -0700
+Processing by BoardsController#index as JSON
+  [1m[35mBoard Load (0.8ms)[0m  SELECT "boards".* FROM "boards"
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-18 09:02:17 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+Completed 200 OK in 281ms (Views: 280.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cards.css?body=1" for 127.0.0.1 at 2014-05-18 09:02:17 -0700
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-05-18 09:02:17 -0700
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-05-18 09:02:17 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-18 09:02:17 -0700
+
+
+Started GET "/assets/jquery.ui.core.css?body=1" for 127.0.0.1 at 2014-05-18 09:02:17 -0700
+
+
+Started GET "/assets/boards.css?body=1" for 127.0.0.1 at 2014-05-18 09:02:17 -0700
+
+
+Started GET "/assets/jquery.ui.theme.css?body=1" for 127.0.0.1 at 2014-05-18 09:02:17 -0700
+
+
+Started GET "/assets/jquery.ui.accordion.css?body=1" for 127.0.0.1 at 2014-05-18 09:02:17 -0700
+
+
+Started GET "/assets/jquery.ui.menu.css?body=1" for 127.0.0.1 at 2014-05-18 09:02:17 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.css?body=1" for 127.0.0.1 at 2014-05-18 09:02:17 -0700
+
+
+Started GET "/assets/jquery.ui.button.css?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.css?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.resizable.css?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.dialog.css?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.progressbar.css?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.selectable.css?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.slider.css?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.spinner.css?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.tabs.css?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.tooltip.css?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.base.css?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.all.css?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.accordion.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.droppable.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.effect-blind.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.effect-bounce.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.effect-clip.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.effect-drop.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.effect-explode.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.effect-fade.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.effect-fold.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.effect-highlight.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.effect-pulsate.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.effect-scale.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.effect-shake.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.effect-slide.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.effect-transfer.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.progressbar.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.selectable.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.slider.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.spinner.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.tabs.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.tooltip.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.ui.all.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/jquery.serializejson.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/trellino_app.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/boards/board_tile.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/boards/index.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/boards/new.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/boards/new_board_placeholder.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/boards/show.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/cards/card_tile.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/cards/new.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/cards/new_card_placeholder.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/lists/index.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/lists/list_tile.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/lists/new.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/lists/new_list_placeholder.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/models/board.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/models/card.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/models/list.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/collections/board_lists.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/collections/boards.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/collections/list_cards.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/views/boards_index.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/views/boards_new.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/views/boards_show.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/views/cards_new.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/views/cards_show.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/views/lists_new.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/views/lists_show.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/routers/app_router.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/boards" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+Processing by BoardsController#index as JSON
+  [1m[36mBoard Load (0.4ms)[0m  [1mSELECT "boards".* FROM "boards"[0m
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-05-18 09:02:18 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (0.0ms)
+Completed 200 OK in 247ms (Views: 246.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/boards.css?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/cards.css?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.core.css?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.theme.css?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.css?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.accordion.css?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.button.css?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.menu.css?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.css?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.resizable.css?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.dialog.css?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.progressbar.css?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.selectable.css?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.slider.css?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.spinner.css?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.tabs.css?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.tooltip.css?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.base.css?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.all.css?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.accordion.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.droppable.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.effect-bounce.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.effect-clip.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:07 -0700
+
+
+Started GET "/assets/jquery.ui.effect-blind.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/jquery.ui.effect-drop.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/jquery.ui.effect-explode.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/jquery.ui.effect-fade.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/jquery.ui.effect-fold.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/jquery.ui.effect-highlight.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/jquery.ui.effect-pulsate.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/jquery.ui.effect-scale.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/jquery.ui.effect-shake.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/jquery.ui.effect-slide.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/jquery.ui.effect-transfer.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/jquery.ui.progressbar.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/jquery.ui.selectable.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/jquery.ui.slider.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/jquery.ui.spinner.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/jquery.ui.tabs.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/jquery.ui.tooltip.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/jquery.ui.all.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/jquery.serializejson.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/trellino_app.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/boards/board_tile.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/boards/index.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/boards/new.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/boards/new_board_placeholder.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/boards/show.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/cards/card_tile.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/cards/new.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/cards/new_card_placeholder.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/lists/index.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/lists/list_tile.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/lists/new.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/lists/new_list_placeholder.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/models/board.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/models/card.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/models/list.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/collections/board_lists.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/collections/boards.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/collections/list_cards.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/views/boards_index.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/views/boards_new.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/views/boards_show.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/views/cards_new.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/views/cards_show.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/views/lists_new.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/views/lists_show.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/routers/app_router.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started GET "/boards" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+Processing by BoardsController#index as JSON
+  [1m[35mBoard Load (0.5ms)[0m  SELECT "boards".* FROM "boards"
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-05-18 09:03:08 -0700
+
+
+Started POST "/boards/update_order" for 127.0.0.1 at 2014-05-18 09:03:17 -0700
+Processing by BoardsController#update_order as */*
+  Parameters: {"new-board"=>["tile"], "board"=>["3", "1", "2"]}
+  [1m[36mBoard Load (0.4ms)[0m  [1mSELECT  "boards".* FROM "boards"  WHERE "boards"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mBoard Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "boards"  WHERE ("boards"."title" = 'Board Test' AND "boards"."id" != 3) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "boards" SET "sort_id" = $1, "updated_at" = $2 WHERE "boards"."id" = 3  [["sort_id", 1], ["updated_at", "2014-05-18 16:03:17.825423"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mBoard Load (0.4ms)[0m  SELECT  "boards".* FROM "boards"  WHERE "boards"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mBoard Exists (0.5ms)[0m  SELECT  1 AS one FROM "boards"  WHERE ("boards"."title" = 'Board 1' AND "boards"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "boards" SET "sort_id" = $1, "updated_at" = $2 WHERE "boards"."id" = 1[0m  [["sort_id", 2], ["updated_at", "2014-05-18 16:03:17.831002"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT  "boards".* FROM "boards"  WHERE "boards"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mBoard Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "boards"  WHERE ("boards"."title" = 'Board 2' AND "boards"."id" != 2) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "boards" SET "sort_id" = $1, "updated_at" = $2 WHERE "boards"."id" = 2  [["sort_id", 3], ["updated_at", "2014-05-18 16:03:17.835381"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 16ms (ActiveRecord: 7.6ms)
