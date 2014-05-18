@@ -18,6 +18,8 @@ window.TrellinoApp.Views.BoardsIndex = Backbone.TileView.extend({
   
   tileSubviewClass: TrellinoApp.Views.BoardsTile,
   
+  newTilePlaceholderTemplate: JST['boards/new_board_placeholder'],
+  
   template: JST["boards/index"],
   
   events: _.extend({
@@ -36,7 +38,7 @@ window.TrellinoApp.Views.BoardsIndex = Backbone.TileView.extend({
     this.$el.html(renderedContent);
     
     this.renderSubviews();
-    
+    this.$el.find('#tile-container').prepend(this.newTilePlaceholderTemplate());
     return this;
   }
   

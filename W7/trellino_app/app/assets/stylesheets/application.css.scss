@@ -20,14 +20,15 @@
   width: 100vw;
 }
 
-
-
-
 .tile {
   margin: 20px;
   padding: 10px;
   border-radius: 15px;
   color: white;
+
+  h1 {
+    color: white;
+  }
   
   h1 a {
     color: white;
@@ -39,6 +40,15 @@
 }
 
 //boards
+
+#board-title {
+  color: #1995DC;
+  
+  h1 {
+    color: #1995DC;
+  }
+}
+
 
 .tile.board-tile {
   background-color: rgb(25, 149, 220);
@@ -77,20 +87,25 @@ button#create-board {
 
 .card-tile {
   width: 100%;
+  padding: 5px;
   
   p {
     background-color: rgb(214, 240, 225);
     color: rgb(68, 186, 117);
-    margin: 10px;
+//    margin: 10px;
     border-radius: 5px;
     padding: 5px;
   }
   
   textarea {
-    margin: 10px;
+    padding: auto;
   }
 }
 
 #new-card-tile a {
   color: white;
+}
+
+button#create-card {
+  margin-top: 5px;
 }

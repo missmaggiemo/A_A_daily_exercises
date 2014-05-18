@@ -38,7 +38,7 @@ window.TrellinoApp.Views.ListsShow = Backbone.CompositeView.extend({
     
     this.addSubview("#card-container", cardsShowView);
     cardsShowView.render();
-    this.$el.find("#card-container").prepend(JST['cards/new_card_placeholder']({ list: this.model }));
+    this.$el.find("#card-container").append(JST['cards/new_card_placeholder']({ list: this.model }));
   },
   
   removeCard: function (card) {

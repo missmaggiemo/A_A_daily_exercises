@@ -70,10 +70,12 @@ Backbone.CompositeView = Backbone.View.extend({
 Backbone.TileView = Backbone.CompositeView.extend({
   tileSubviewClass: null,
 
+  newTilePlaceholderTemplate: null,
+
   initialize: function () {
 
     this.listenTo(this.collection, "add", this.addTileSubview);
-
+    this.listenTo(this.collection, "remove", this.removeTileSubview);
     this.collection.each(this.addTileSubview.bind(this));
   },
 
@@ -84,7 +86,18 @@ Backbone.TileView = Backbone.CompositeView.extend({
 
     this.addSubview("#tile-container", tileSubview);
     tileSubview.render();
+    this.render();
   },
+  
+  removeTileSubview: function () {
+    var tileSubview =
+      _(this.subviews()["#tile-container"]).find(function (subview) {
+        return subview.model == list;
+      });
+
+    this.removeSubview("#tile-container", tileSubview);
+    this.render();
+  }
 
 });
 

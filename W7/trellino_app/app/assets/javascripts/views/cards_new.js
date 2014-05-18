@@ -2,9 +2,9 @@ window.TrellinoApp.Views.CardsNew = Backbone.View.extend({
 
   template: JST["cards/new"],
   
-  className: "col-md-3",
+  className: "cards card-tile",
   
-  id: "new-list-form",
+  id: "new-card-form",
   
   events: {
     "submit form": "submit"
@@ -25,10 +25,10 @@ window.TrellinoApp.Views.CardsNew = Backbone.View.extend({
     var view = this;
     event.preventDefault();
 
-    var params = $(event.currentTarget).serializeJSON()["list"];
+    var params = $(event.currentTarget).serializeJSON()["card"];
     var newCard = new TrellinoApp.Models.Card(params);
 
-    newList.save({}, {
+    newCard.save({}, {
       success: function () {
         view.list.cards().add(newCard);
         view.$el.remove();
