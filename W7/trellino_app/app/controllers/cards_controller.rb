@@ -35,7 +35,8 @@ class CardsController < ApplicationController
     if params[:card].length > 0
       @list = List.find(params[:list_id])
       @list.cards.each.with_index do |card, index|
-        card.update(sort_id: params[:card][index])
+        sort_id = params[:card][index] == 0 ? index : params[:card][index]
+        card.update(sort_id: sort_id)
       end
       head :ok
     else

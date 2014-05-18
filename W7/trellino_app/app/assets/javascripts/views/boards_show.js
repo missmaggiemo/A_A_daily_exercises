@@ -67,7 +67,7 @@ window.TrellinoApp.Views.BoardsShow = Backbone.CompositeView.extend({
           type: 'POST',
           url: '/lists/update_order',
           success: function () {
-            console.log('heyo');
+            console.log('Sorted.');
           }
         });
       }

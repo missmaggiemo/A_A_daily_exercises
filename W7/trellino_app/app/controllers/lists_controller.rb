@@ -35,8 +35,8 @@ class ListsController < ApplicationController
     if params[:list].length > 0
       @board = Board.find(params[:board_id])
       @board.lists.each.with_index do |list, index|
-        puts params[:list][index]
-        list.update(sort_id: params[:list][index])
+        sort_id = params[:list][index] == 0 ? index : params[:list][index]
+        list.update(sort_id: sort_id)
       end
       head :ok
     else

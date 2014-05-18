@@ -57,7 +57,7 @@ window.TrellinoApp.Views.BoardsIndex = Backbone.TileView.extend({
           type: 'POST',
           url: '/boards/update_order',
           success: function () {
-            console.log('heyo');
+            console.log('Sorted.');
           }
         });
       }
