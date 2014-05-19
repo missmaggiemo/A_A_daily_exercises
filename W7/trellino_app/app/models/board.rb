@@ -6,7 +6,7 @@ class Board < ActiveRecord::Base
   
   has_many :lists
 
-  
+    
   def lists
     List.where(board_id: self.id).order(:sort_id)
   end

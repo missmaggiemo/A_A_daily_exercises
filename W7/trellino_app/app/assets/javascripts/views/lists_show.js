@@ -19,7 +19,7 @@ window.TrellinoApp.Views.ListsShow = Backbone.CompositeView.extend({
   },
   
   events: {
-    "click button.destroy": "destroy",
+    "click .delete-x a": "delete",
     "click a#new-card": "cardsNew"
   },
   
@@ -86,7 +86,7 @@ window.TrellinoApp.Views.ListsShow = Backbone.CompositeView.extend({
     return this;
   },
 
-  destroy: function () {
+  delete: function () {
     this.model.destroy();
   }
     

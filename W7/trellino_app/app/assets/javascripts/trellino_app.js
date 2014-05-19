@@ -89,10 +89,10 @@ Backbone.TileView = Backbone.CompositeView.extend({
     this.render();
   },
   
-  removeTileSubview: function () {
+  removeTileSubview: function (model) {
     var tileSubview =
       _(this.subviews()["#tile-container"]).find(function (subview) {
-        return subview.model == list;
+        return subview.model === model;
       });
 
     this.removeSubview("#tile-container", tileSubview);

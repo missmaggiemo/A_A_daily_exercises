@@ -4,8 +4,16 @@ window.TrellinoApp.Views.BoardsTile = Backbone.View.extend({
   
   className: "boards col-md-3",
   
+  events: {
+    'click .delete-x a': 'deleteBoard'
+  },
+
   initialize: function (options) {
     this.$el.attr('id', "board-" + this.model.id);
+  },
+  
+  deleteBoard: function(event) {
+    this.model.destroy();
   },
   
   render: function () {
