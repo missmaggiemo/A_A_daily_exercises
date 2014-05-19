@@ -7,8 +7,13 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-Board.create(title: "Board 1", description: "Nursery rhymes.", sort_id: 1)
-Board.create(title: "Board 2", sort_id: 2)
+User.create(email: "test1@test.com", password: "testtest", username: "test1")
+User.create(email: "test2@test.com", password: "testtest", username: "test2")
+
+# users have boards?
+
+Board.create(title: "Board 1", description: "Nursery rhymes.", sort_id: 1, user_id: 1)
+Board.create(title: "Board 2", description: "Board for user 2.", sort_id: 2, user_id: 2)
 
 List.create(board_id: 1, title: "List 1-1", sort_id: 1)
 List.create(board_id: 2, title: "List 2-1", sort_id: 2)

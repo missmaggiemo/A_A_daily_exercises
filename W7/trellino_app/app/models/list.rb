@@ -4,6 +4,8 @@ class List < ActiveRecord::Base
 
   belongs_to :board
   
+  has_many :cards
+  
   def cards
     Card.where(list_id: self.id).order(:sort_id)
   end

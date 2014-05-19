@@ -3,13 +3,13 @@ class BoardsController < ApplicationController
   before_action :find_board, only: [:destroy, :show]
 
   def index
-    @boards = Board.all
+    @boards = current_user.try(:boards)
     render json: @boards.sort_by(&:sort_id)
   end
 
 
   def create
-    @board = Board.new(board_params)
+    @board = current_user.boards.new(board_params)
     if @board.save
       @board.update(sort_id: @board.id)
       render json: @board
