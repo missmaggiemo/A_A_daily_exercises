@@ -51,9 +51,9 @@ Click to edit card content.
 
 
 ### Add users.
-Users log in, etc. Devise?
-Users have boards.
-Can give other users access to boards.
+<!-- Users log in, etc. Devise? -->
+<!-- Users have boards. -->
+<!-- Can give other users access to boards. -->
 
 
 ### Congratulations, you just made Trellino.

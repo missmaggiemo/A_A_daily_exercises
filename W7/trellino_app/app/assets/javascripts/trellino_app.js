@@ -4,7 +4,7 @@ window.TrellinoApp = {
   Views: {},
   Routers: {},
   initialize: function() {
-    console.log('Hello from Backbone!');
+    console.log('Hello from Trellino!');
     
     new TrellinoApp.Routers.AppRouter();
     
