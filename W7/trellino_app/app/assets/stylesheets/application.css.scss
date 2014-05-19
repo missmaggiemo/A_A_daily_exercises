@@ -16,6 +16,12 @@
  *= require_self
  */
 
+@font-face {
+  font-family: 'KaushanScript';
+  font-style: normal;
+  src: local('KaushanScript') url('/assets/KaushanScript-Regular.otf') format('opentype');
+}
+
 #body {
   margin: 30px 0;
   width: 100vw;
@@ -25,6 +31,10 @@
   border: none;
   border-radius: 0px;
   background-image: none;
+}
+
+#logo {
+  font-family: 'KaushanScript';
 }
 
 .tile {
