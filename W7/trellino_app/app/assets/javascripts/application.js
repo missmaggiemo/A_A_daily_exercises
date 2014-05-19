@@ -25,3 +25,4 @@
 //= require_tree ./routers
 //= require_tree ../../../vendor/assets/javascripts/bootstrap
 //= require_tree .
+
