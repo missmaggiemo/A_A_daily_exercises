@@ -34,11 +34,11 @@ window.TrellinoApp.Views.BoardsShow = Backbone.CompositeView.extend({
 
   removeList: function (list) {
     var listsShowView =
-      _(this.subviews()[".lists"]).find(function (subview) {
+      _(this.subviews()["#tile-container"]).find(function (subview) {
         return subview.model == list;
       });
 
-    this.removeSubview(".lists", listsShowView);
+    this.removeSubview("#tile-container", listsShowView);
   },
   
   sortableLists: function () {

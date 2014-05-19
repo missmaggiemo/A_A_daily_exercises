@@ -9,6 +9,10 @@ window.TrellinoApp.Views.CardsShow = Backbone.View.extend({
 
   className: 'cards card-tile',
   
+  events: {
+    "click .delete-x-link": "delete"
+  },
+  
   initialize: function (options) {
     this.$el.attr('id', 'card-' + this.model.id);
   },
@@ -21,6 +25,11 @@ window.TrellinoApp.Views.CardsShow = Backbone.View.extend({
     this.$el.html(renderedContent);
     
     return this;
+  },
+  
+  delete: function () {
+    this.model.destroy();
   }
+  
   
 });
