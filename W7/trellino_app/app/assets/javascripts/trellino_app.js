@@ -101,8 +101,3 @@ Backbone.TileView = Backbone.CompositeView.extend({
 
 });
 
-
-
-$(document).ready(function(){
-  TrellinoApp.initialize();
-});

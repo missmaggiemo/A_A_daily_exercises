@@ -58,3 +58,4 @@ gem "pg"
 gem "backbone-on-rails"
 gem "underscore"
 gem 'jquery-ui-rails'
+gem 'devise'

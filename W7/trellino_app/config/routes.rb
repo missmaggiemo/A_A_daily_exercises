@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  devise_for :users
+
+
+
   root 'static_pages#home'
   
   post 'boards/update_order', to: 'boards#update_order'
