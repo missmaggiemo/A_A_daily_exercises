@@ -40,18 +40,8 @@ window.TrellinoApp.Views.BoardsShow = Backbone.CompositeView.extend({
 
     this.removeSubview(".lists", listsShowView);
   },
-
-  render: function () {
-    var renderedContent = this.template({
-      board: this.model
-    });
-
-    this.$el.html(renderedContent);
-
-    this.renderSubviews();
-    
-    this.$el.find("#tile-container").prepend(JST['lists/new_list_placeholder']());
-    
+  
+  sortableLists: function () {
     var view = this;
     
     this.$el.find('#tile-container').sortable({
@@ -72,6 +62,20 @@ window.TrellinoApp.Views.BoardsShow = Backbone.CompositeView.extend({
         });
       }
     });
+  },
+
+  render: function () {
+    var renderedContent = this.template({
+      board: this.model
+    });
+
+    this.$el.html(renderedContent);
+
+    this.renderSubviews();
+    
+    this.$el.find("#tile-container").prepend(JST['lists/new_list_placeholder']());
+    
+    this.sortableLists();
     
     return this;
   }
