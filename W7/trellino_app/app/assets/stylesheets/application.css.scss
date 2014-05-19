@@ -27,21 +27,47 @@
   width: 100vw;
 }
 
+
+
+//navbar
+
 .navbar {
   border: none;
   border-radius: 0px;
   background-image: none;
+  font-size: 2em;
 }
-
 
 #logo {
   font-family: 'KaushanScript';
 }
 
-
 .navbar-brand#logo {
-  font-size: 3em;
+  font-size: 1.5em;
 }
+
+
+
+//user forms
+
+.form-box {
+  background-color: #D9EDF7;
+  border-radius: 10px;
+  padding: 20px;
+  
+  .form-control {
+    border: none;
+  }
+  
+}
+
+.user-form-links {
+  margin: 20px 0;
+}
+
+
+
+//tiles
 
 .tile {
   margin: 20px;
