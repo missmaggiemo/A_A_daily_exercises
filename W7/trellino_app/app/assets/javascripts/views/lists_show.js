@@ -60,13 +60,12 @@ window.TrellinoApp.Views.ListsShow = Backbone.CompositeView.extend({
       forceHelperSize: true,
       update: function(event, ui) {
         var data = $(this).sortable('serialize') + '&list_id=' + view.model.id;
-        console.log(data);
         $.ajax({
           data: data,
           type: 'POST',
           url: '/cards/update_order',
           success: function () {
-            console.log('Sorted.');
+            console.log('Cards sorted.');
           }
         });
       }

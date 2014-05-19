@@ -38,12 +38,7 @@ window.TrellinoApp.Views.BoardsIndex = Backbone.TileView.extend({
     return this;
   },
   
-  render: function () {
-    var renderedContent = this.template({ boards: this.collection });
-    this.$el.html(renderedContent);
-    
-    this.renderSubviews();
-    this.$el.find('#tile-container').prepend(this.newTilePlaceholderTemplate());
+  sortableBoards: function () {
     this.$el.find('#tile-container').sortable({
       tolerance: 'pointer',
       revert: 'invalid',
@@ -51,17 +46,26 @@ window.TrellinoApp.Views.BoardsIndex = Backbone.TileView.extend({
       forceHelperSize: true,
       update: function(event, ui) {
         var data = $(this).sortable('serialize');
-        console.log(data);
         $.ajax({
           data: data,
           type: 'POST',
           url: '/boards/update_order',
           success: function () {
-            console.log('Sorted.');
+            console.log('Boards sorted.');
           }
         });
       }
     });
+  },
+  
+  render: function () {
+    var renderedContent = this.template({ boards: this.collection });
+    this.$el.html(renderedContent);
+    
+    this.renderSubviews();
+    this.$el.find('#tile-container').prepend(this.newTilePlaceholderTemplate());
+    
+    this.sortableBoards();
    
     return this;
   }
