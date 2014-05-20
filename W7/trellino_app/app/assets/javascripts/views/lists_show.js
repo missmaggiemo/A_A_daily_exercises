@@ -11,6 +11,7 @@ window.TrellinoApp.Views.ListsShow = Backbone.CompositeView.extend({
     
   initialize: function (options) {
     this.listenTo(this.model, "sync", this.render);
+    this.listenTo(this.model, "change", this.render);
     this.listenTo(this.model.cards(), "add", this.addCard);
     this.listenTo(this.model.cards(), "remove", this.removeCard);
 
@@ -20,7 +21,25 @@ window.TrellinoApp.Views.ListsShow = Backbone.CompositeView.extend({
   
   events: {
     "click .delete-x a": "delete",
-    "click a#new-card": "cardsNew"
+    "click a#new-card": "cardsNew",
+    "dblclick #list-tile": "editTile"  
+  },
+  
+  editTile: function () {
+    
+    var view = this;
+    
+    var newView = JST['lists/edit']({list: view.model});
+    
+    view.$el.find('#list-tile').replaceWith(newView);
+    
+    $('form').on('submit', function(event){
+      event.preventDefault();
+      var params = $(event.currentTarget).serializeJSON()["list"];
+      view.model.save(params);
+    });
+    
+    return this;
   },
   
   cardsNew: function (event) {

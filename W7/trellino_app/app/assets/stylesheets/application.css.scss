@@ -119,15 +119,6 @@
 
 //boards
 
-#board-title {
-  color: #1995DC;
-  
-  h1 {
-    color: #1995DC;
-  }
-}
-
-
 .tile.board-tile {
   background-color: rgb(25, 149, 220);
   height: 15vw;
@@ -141,14 +132,14 @@
     color: #FDFDFD;
     font-size: 1.2em;
   }
+  
+  button {
+    margin-top: 10px;
+  }
 }
 
 #new-board-tile form input {
   color: #111;
-}
-
-button#create-board {
-  margin-top: 10px;
 }
 
 

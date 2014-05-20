@@ -5,14 +5,33 @@ window.TrellinoApp.Views.BoardsTile = Backbone.View.extend({
   className: "boards col-md-3",
   
   events: {
-    'click .delete-x a': 'deleteBoard'
+    'click .delete-x a': 'deleteBoard',
+    'dblclick #board-tile': "editTile"
   },
 
   initialize: function (options) {
     this.$el.attr('id', "board-" + this.model.id);
+    this.listenTo(this.model, "change", this.render);
   },
   
-  deleteBoard: function(event) {
+  editTile: function () {
+    
+    var view = this;
+    
+    var newView = JST['boards/edit']({board: view.model});
+    
+    view.$el.find('#board-tile').replaceWith(newView);
+    
+    $('form').on('submit', function(event){
+      event.preventDefault();
+      var params = $(event.currentTarget).serializeJSON()["board"];
+      view.model.save(params);
+    });
+    
+    return this;
+  },
+  
+  deleteBoard: function () {
     this.model.destroy();
   },
   

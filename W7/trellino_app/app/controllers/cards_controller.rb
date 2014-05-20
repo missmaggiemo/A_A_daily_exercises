@@ -21,7 +21,6 @@ class CardsController < ApplicationController
   def destroy
     if @card.try(:destroy)
       head :ok
-      render json: {}
     else
       render json: @card.errors.full_messages, status: 422
     end

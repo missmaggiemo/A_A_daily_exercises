@@ -10,13 +10,11 @@ Rails.application.routes.draw do
   
   post 'cards/update_order', to: 'cards#update_order'
   
-  resources :boards, only: [:create, :destroy, :show, :index] do
+  resources :boards, only: [:create, :destroy, :show, :index, :update] do
     resources :lists, only: :index
   end
   
-  resources :lists, only: [:create, :destroy]
-  
-  resources :lists, only: :show do
+  resources :lists, only: [:create, :destroy, :show, :update] do
     resources :cards, only: :index
   end
   

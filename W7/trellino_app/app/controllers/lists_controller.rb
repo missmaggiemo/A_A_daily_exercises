@@ -45,7 +45,16 @@ class ListsController < ApplicationController
       render json: "Oh no!", status: 422
     end
   end
-  
+
+  def update  
+    @list = List.find(params[:id])
+    if @list && @list.update(list_params)
+      render json: @list
+    else
+      render json: @list.errors.full_messages, status: 422      
+    end
+  end
+
   
   private
   

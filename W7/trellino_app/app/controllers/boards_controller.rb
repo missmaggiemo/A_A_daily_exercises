@@ -45,6 +45,16 @@ class BoardsController < ApplicationController
     end
   end
 
+
+  def update
+    @board = Board.find(params[:id])
+    if @board && @board.update(board_params)
+      render json: @board
+    else
+      render json: @board.errors.full_messages, status: 422      
+    end    
+  end
+
   
   private
   

@@ -17,7 +17,7 @@ Is it working? YES!
 <!-- Backbone model, collection, views for lists -->
 <!-- Backbone templates for lists -->
 
-Is it working?
+Is it working? YES!
 
 
 ### Then add cards to the lists..
@@ -26,7 +26,7 @@ Is it working?
 <!-- Backbone model, collection, views for cards -->
 <!-- Backbone templates for cards -->
 
-Is it working?
+Is it working? YES!
 
 
 
