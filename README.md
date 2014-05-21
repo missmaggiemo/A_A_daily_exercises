@@ -139,3 +139,9 @@ Project: [First Bootstrap Project](https://github.com/shawndromat/bootstrapped)
 W7D5
 
 Solo day! Project: Trellino
+
+### Week 8
+
+W8D2
+
+[Tyler Hansen](https://github.com/TylerNHansen)
