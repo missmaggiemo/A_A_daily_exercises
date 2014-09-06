@@ -138,7 +138,7 @@ Project: [First Bootstrap Project](https://github.com/shawndromat/bootstrapped)
 
 W7D5
 
-Solo day! Project: Trellino
+Solo day! Project: [Trellino](https://github.com/missmaggiemo/trellino)
 
 ### Week 8
 
